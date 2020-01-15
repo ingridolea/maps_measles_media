@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body {
+  font: 12px sans-serif;
+}
+ 
+.state rect {
+  fill: #a6a8ab;
+}
+
+.state text {
+  font: 12px sans-serif;
+  font-weight: bold;
+  text-anchor: middle;
+  fill: white;
+}
+  
+.q0-5 rect { fill: #e3d2c7; }
+.q1-5 rect { fill: #e6b5a6; }
+.q2-5 rect { fill: #e98a75; }
+.q3-5 rect { fill: #ed5e44; }
+.q4-5 rect { fill: #ef4123; }
+  
+
+#legend {
+    padding: 1.5em 0 0 1.5em;
+}
+  
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+  
+.list-inline > li {
+  display: inline-block;
+}
+
+li.key {
+    border-top-width: 15px;
+    border-top-style: solid;
+    font-size: 1em;
+    width: 10%;
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+li.q0-5 { color: #e3d2c7; }
+li.q1-5 { color: #e6b5a6; }
+li.q2-5 { color: #e98a75; }
+li.q3-5 { color: #ed5e44; }
+li.q4-5 { color: #ef4123; }
+
+</style>
+<body>
+<svg width="960" height="500"></svg>
+<script id="grid" type="text/plain">
+                              ME
+               WI          VT NH
+WA ID MT ND MN IL MI    NY MA RI
+OR NV WY SD IA IN OH PA NJ CT
+CA UT CO NE MO KY WV VA MD DE
+   AZ NM KS AR TN NC SC
+         OK LA MS AL GA
+HI AK    TX             FL
+</script>
+<script src="jenks.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+var states = [],
+    //
+    // EDIT!
+    //
+    dataKey = 'overdoseDeathRates20112013',
+    //
+    // DON'T EDIT!
+    //
+    stateKey = 'stateAbbreviation',
+    rowsArr = [
+    {
+        "state": "Alabama",
+        "stateAbbreviation": "AL",
+        "overdoseDeathRates19992001": 2.3,
+        "overdoseDeathRates20052007": 6.9,
+        "overdoseDeathRates20112013": 6.2
+    },
+    {
+        "state": "Alaska",
+        "stateAbbreviation": "AK",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": 7.7,
+        "overdoseDeathRates20112013": 7.2
+    },
+    {
+        "state": "Arizona",
+        "stateAbbreviation": "AZ",
+        "overdoseDeathRates19992001": 4,
+        "overdoseDeathRates20052007": 7.4,
+        "overdoseDeathRates20112013": 10.2
+    },
+    {
+        "state": "Arkansas",
+        "stateAbbreviation": "AR",
+        "overdoseDeathRates19992001": 2.4,
+        "overdoseDeathRates20052007": 7.9,
+        "overdoseDeathRates20112013": 8.4
+    },
+    {
+        "state": "California",
+        "stateAbbreviation": "CA",
+        "overdoseDeathRates19992001": 1.7,
+        "overdoseDeathRates20052007": 3.2,
+        "overdoseDeathRates20112013": 4.9
+    },
+    {
+        "state": "Colorado",
+        "stateAbbreviation": "CO",
+        "overdoseDeathRates19992001": 3.5,
+        "overdoseDeathRates20052007": 7.3,
+        "overdoseDeathRates20112013": 10.2
+    },
+    {
+        "state": "Connecticut",
+        "stateAbbreviation": "CT",
+        "overdoseDeathRates19992001": 4.1,
+        "overdoseDeathRates20052007": 8.3,
+        "overdoseDeathRates20112013": 8.3
+    },
+    {
+        "state": "Delaware",
+        "stateAbbreviation": "DE",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": 5.1,
+        "overdoseDeathRates20112013": 10.2
+    },
+    {
+        "state": "Florida",
+        "stateAbbreviation": "FL",
+        "overdoseDeathRates19992001": 5.8,
+        "overdoseDeathRates20052007": 10.7,
+        "overdoseDeathRates20112013": 5.7
+    },
+    {
+        "state": "Georgia",
+        "stateAbbreviation": "GA",
+        "overdoseDeathRates19992001": 2.3,
+        "overdoseDeathRates20052007": 5.5,
+        "overdoseDeathRates20112013": 5.2
+    },
+    {
+        "state": "Hawaii",
+        "stateAbbreviation": "HI",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": 2.9,
+        "overdoseDeathRates20112013": 4.6
+    },
+    {
+        "state": "Idaho",
+        "stateAbbreviation": "ID",
+        "overdoseDeathRates19992001": 2.5,
+        "overdoseDeathRates20052007": 3.3,
+        "overdoseDeathRates20112013": 5.8
+    },
+    {
+        "state": "Illinois",
+        "stateAbbreviation": "IL",
+        "overdoseDeathRates19992001": 3.9,
+        "overdoseDeathRates20052007": 6.2,
+        "overdoseDeathRates20112013": 8.2
+    },
+    {
+        "state": "Indiana",
+        "stateAbbreviation": "IN",
+        "overdoseDeathRates19992001": 2.4,
+        "overdoseDeathRates20052007": 9.7,
+        "overdoseDeathRates20112013": 9.6
+    },
+    {
+        "state": "Iowa",
+        "stateAbbreviation": "IA",
+        "overdoseDeathRates19992001": 1.4,
+        "overdoseDeathRates20052007": 3.5,
+        "overdoseDeathRates20112013": 4.3
+    },
+    {
+        "state": "Kansas",
+        "stateAbbreviation": "KS",
+        "overdoseDeathRates19992001": 1.3,
+        "overdoseDeathRates20052007": 4.1,
+        "overdoseDeathRates20112013": 5.9
+    },
+    {
+        "state": "Kentucky",
+        "stateAbbreviation": "KY",
+        "overdoseDeathRates19992001": 4,
+        "overdoseDeathRates20052007": 11.5,
+        "overdoseDeathRates20112013": 10.5
+    },
+    {
+        "state": "Louisiana",
+        "stateAbbreviation": "LA",
+        "overdoseDeathRates19992001": 3.5,
+        "overdoseDeathRates20052007": 13.4,
+        "overdoseDeathRates20112013": 6.2
+    },
+    {
+        "state": "Maine",
+        "stateAbbreviation": "ME",
+        "overdoseDeathRates19992001": 3.6,
+        "overdoseDeathRates20052007": 10.2,
+        "overdoseDeathRates20112013": 4.7
+    },
+    {
+        "state": "Maryland",
+        "stateAbbreviation": "MD",
+        "overdoseDeathRates19992001": 5.2,
+        "overdoseDeathRates20052007": 7.3,
+        "overdoseDeathRates20112013": 8.5
+    },
+    {
+        "state": "Massachusetts",
+        "stateAbbreviation": "MA",
+        "overdoseDeathRates19992001": 5.2,
+        "overdoseDeathRates20052007": 6.8,
+        "overdoseDeathRates20112013": 7.8
+    },
+    {
+        "state": "Michigan",
+        "stateAbbreviation": "MI",
+        "overdoseDeathRates19992001": 2.1,
+        "overdoseDeathRates20052007": 6.6,
+        "overdoseDeathRates20112013": 8.1
+    },
+    {
+        "state": "Minnesota",
+        "stateAbbreviation": "MN",
+        "overdoseDeathRates19992001": 1.6,
+        "overdoseDeathRates20052007": 3,
+        "overdoseDeathRates20112013": 5.7
+    },
+    {
+        "state": "Mississippi",
+        "stateAbbreviation": "MS",
+        "overdoseDeathRates19992001": 2.1,
+        "overdoseDeathRates20052007": 5.6,
+        "overdoseDeathRates20112013": 3.7
+    },
+    {
+        "state": "Missouri",
+        "stateAbbreviation": "MO",
+        "overdoseDeathRates19992001": 3.1,
+        "overdoseDeathRates20052007": 7.5,
+        "overdoseDeathRates20112013": 9.5
+    },
+    {
+        "state": "Montana",
+        "stateAbbreviation": "MT",
+        "overdoseDeathRates19992001": 1.6,
+        "overdoseDeathRates20052007": 7.5,
+        "overdoseDeathRates20112013": 7
+    },
+    {
+        "state": "Nebraska",
+        "stateAbbreviation": "NE",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": 2.5,
+        "overdoseDeathRates20112013": 3.7
+    },
+    {
+        "state": "Nevada",
+        "stateAbbreviation": "NV",
+        "overdoseDeathRates19992001": 4.4,
+        "overdoseDeathRates20052007": 11.8,
+        "overdoseDeathRates20112013": 11.6
+    },
+    {
+        "state": "New Hampshire",
+        "stateAbbreviation": "NH",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": 10.5,
+        "overdoseDeathRates20112013": 9.3
+    },
+    {
+        "state": "New Jersey",
+        "stateAbbreviation": "NJ",
+        "overdoseDeathRates19992001": 4.8,
+        "overdoseDeathRates20052007": 6.3,
+        "overdoseDeathRates20112013": 10.7
+    },
+    {
+        "state": "New Mexico",
+        "stateAbbreviation": "NM",
+        "overdoseDeathRates19992001": 6.1,
+        "overdoseDeathRates20052007": 9.8,
+        "overdoseDeathRates20112013": 12.5
+    },
+    {
+        "state": "New York",
+        "stateAbbreviation": "NY",
+        "overdoseDeathRates19992001": 1.8,
+        "overdoseDeathRates20052007": 3.5,
+        "overdoseDeathRates20112013": 6.9
+    },
+    {
+        "state": "North Carolina",
+        "stateAbbreviation": "NC",
+        "overdoseDeathRates19992001": 3,
+        "overdoseDeathRates20052007": 8,
+        "overdoseDeathRates20112013": 7.1
+    },
+    {
+        "state": "North Dakota",
+        "stateAbbreviation": "ND",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": null,
+        "overdoseDeathRates20112013": null
+    },
+    {
+        "state": "Ohio",
+        "stateAbbreviation": "OH",
+        "overdoseDeathRates19992001": 2.2,
+        "overdoseDeathRates20052007": 6.9,
+        "overdoseDeathRates20112013": 9.1
+    },
+    {
+        "state": "Oklahoma",
+        "stateAbbreviation": "OK",
+        "overdoseDeathRates19992001": 2.6,
+        "overdoseDeathRates20052007": 9.6,
+        "overdoseDeathRates20112013": 9.4
+    },
+    {
+        "state": "Oregon",
+        "stateAbbreviation": "OR",
+        "overdoseDeathRates19992001": 2.5,
+        "overdoseDeathRates20052007": 5.3,
+        "overdoseDeathRates20112013": 6.5
+    },
+    {
+        "state": "Pennsylvania",
+        "stateAbbreviation": "PA",
+        "overdoseDeathRates19992001": 6.1,
+        "overdoseDeathRates20052007": 10.5,
+        "overdoseDeathRates20112013": 11.8
+    },
+    {
+        "state": "Rhode Island",
+        "stateAbbreviation": "RI",
+        "overdoseDeathRates19992001": 3.6,
+        "overdoseDeathRates20052007": 5.2,
+        "overdoseDeathRates20112013": 6
+    },
+    {
+        "state": "South Carolina",
+        "stateAbbreviation": "SC",
+        "overdoseDeathRates19992001": 2.7,
+        "overdoseDeathRates20052007": 5.3,
+        "overdoseDeathRates20112013": 5.8
+    },
+    {
+        "state": "South Dakota",
+        "stateAbbreviation": "SD",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": null,
+        "overdoseDeathRates20112013": null
+    },
+    {
+        "state": "Tennessee",
+        "stateAbbreviation": "TN",
+        "overdoseDeathRates19992001": 3.4,
+        "overdoseDeathRates20052007": 9.1,
+        "overdoseDeathRates20112013": 7
+    },
+    {
+        "state": "Texas",
+        "stateAbbreviation": "TX",
+        "overdoseDeathRates19992001": 3.1,
+        "overdoseDeathRates20052007": 5.9,
+        "overdoseDeathRates20112013": 6
+    },
+    {
+        "state": "Utah",
+        "stateAbbreviation": "UT",
+        "overdoseDeathRates19992001": 3.5,
+        "overdoseDeathRates20052007": 12.5,
+        "overdoseDeathRates20112013": 12.1
+    },
+    {
+        "state": "Vermont",
+        "stateAbbreviation": "VT",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": 6.9,
+        "overdoseDeathRates20112013": 7
+    },
+    {
+        "state": "Virginia",
+        "stateAbbreviation": "VA",
+        "overdoseDeathRates19992001": 3.4,
+        "overdoseDeathRates20052007": 5.3,
+        "overdoseDeathRates20112013": 5.9
+    },
+    {
+        "state": "Washington",
+        "stateAbbreviation": "WA",
+        "overdoseDeathRates19992001": 3.6,
+        "overdoseDeathRates20052007": 6.5,
+        "overdoseDeathRates20112013": 6.9
+    },
+    {
+        "state": "West Virginia",
+        "stateAbbreviation": "WV",
+        "overdoseDeathRates19992001": 3.8,
+        "overdoseDeathRates20052007": 13.8,
+        "overdoseDeathRates20112013": 12.6
+    },
+    {
+        "state": "Wisconsin",
+        "stateAbbreviation": "WI",
+        "overdoseDeathRates19992001": 2,
+        "overdoseDeathRates20052007": 5.8,
+        "overdoseDeathRates20112013": 8.8
+    },
+    {
+        "state": "Wyoming",
+        "stateAbbreviation": "WY",
+        "overdoseDeathRates19992001": null,
+        "overdoseDeathRates20052007": null,
+        "overdoseDeathRates20112013": 9.8
+    }
+]
+
+d3.select("#grid").text().split("\n").forEach(function(line, i) {
+  var re = /\w+/g, m;
+  while (m = re.exec(line)) {
+    states.push({
+      name: m[0],
+      data: _.result(_.findWhere(rowsArr, { 'stateAbbreviation': m[0]}), dataKey),
+      x: m.index / 3,
+      y: i
+    });
+  }
+});
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+var gridWidth = d3.max(states, function(d) { return d.x; }) + 1,
+    gridHeight = d3.max(states, function(d) { return d.y; }) + 1,
+    cellSize = 40;
+
+var nestedData = d3.nest()
+    .key(function(d) { return d.stateAbbrev; })
+    .entries(rowsArr);
+
+var mappedData = function mappedValues(key) {
+  return rowsArr.map(function(stateObj) {
+    return stateObj[dataKey]
+  })
+}
+console.log(mappedData(stateKey))
+console.log(dataKey)
+var currScale = d3.scale.quantile()
+      .domain(d3.range(1,14))
+      .range(d3.range(5).map(function(i) { return "q" + i + "-5"; }));
+
+var state = svg.append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+  .selectAll(".state")
+    .data(states)
+  .enter().append("g")
+    .attr("transform", function(d) { return "translate(" + (d.x - gridWidth / 2) * cellSize + "," + (d.y - gridHeight / 2) * cellSize + ")"; })
+    .attr("class", function(d) {
+      var currData = d.data,
+          currClassStr = '';
+      if (currData !== null) {
+        currClassStr += "state " + currScale(d.data)
+      } else {
+        currClassStr += "state"
+      }
+      return currClassStr;
+    });
+
+state.append("rect")
+    .attr("x", -cellSize / 2)
+    .attr("y", -cellSize / 2)
+    .attr("width", cellSize - 1)
+    .attr("height", cellSize - 1);
+
+state.append("text")
+    .attr("dy", ".35em")
+    .text(function(d) { return d.name; });
+  
+var legend = d3.select('body')
+  .insert('div', ":first-child")
+    .attr("id", "legend")
+  .append('ul')
+    .attr('class', 'list-inline');
+
+var keys = legend.selectAll('li.key')
+    .data(currScale.range());
+
+keys.enter().append('li')
+    .attr('class', function(d) { return'key ' + d; })
+    .style('border-top-color', String)
+    .text(function(d) {
+  			var format = d3.format('.1%');
+        var r = currScale.invertExtent(d);
+        return format(r[0]/100);
+    });
+
+</script>
