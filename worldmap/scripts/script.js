@@ -1,3 +1,4 @@
+
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
@@ -83,7 +84,7 @@ d3.csv("/worldmap/d3.csv", function(d) {
   label.append("tspan")
       .attr("x", 4)
       .attr("y", 13)
-      .text(function(d) { return d.data.path.substring(d.data.path.lastIndexOf("/") + 1, d.data.path.lastIndexOf(".")); });
+      .text(function(d) { return d.data.path.substring(d.data.path.lastIndexOf("/") + 1); });
 
   label.append("tspan")
       .attr("x", 4)
