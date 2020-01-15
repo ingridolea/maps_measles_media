@@ -1,4 +1,3 @@
-
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
@@ -45,7 +44,7 @@ var version = {
   "d3-zoom": "1.1.0"
 };
 
-d3.csv("/worldmap/d3.csv", function(d) {
+d3.csv("worldmap/d3.csv", function(d) {
   d.size = +d.size;
   return d;
 }, function(error, data) {
