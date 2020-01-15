@@ -1,0 +1,202 @@
+size,path
+,d3
+,d3/AFR
+,d3/AMR
+,d3/EMR
+,d3/EUR
+,d3/SEAR
+,d3/WPR
+2962,d3/AFR/Angola
+30,d3/AFR/Burundi
+502,d3/AFR/Benin
+767,d3/AFR/Burkina Faso
+0,d3/AFR/Botswana
+419,d3/AFR/Central African Republic
+428,d3/AFR/Cote d'Ivoire
+2849,d3/AFR/Cameroon
+13418,d3/AFR/Democratic Republic of the Congo
+108,d3/AFR/Congo
+55,d3/AFR/Comoros
+1,d3/AFR/Cabo Verde
+2657,d3/AFR/Algeria
+5,d3/AFR/Eritrea
+3255,d3/AFR/Ethiopia
+77,d3/AFR/Gabon
+1288,d3/AFR/Ghana
+1148,d3/AFR/Guinea
+2,d3/AFR/Gambia
+0,d3/AFR/Guinea-Bissau
+42,d3/AFR/Equatorial Guinea
+575,d3/AFR/Kenya
+1044,d3/AFR/Liberia
+6,d3/AFR/Lesotho
+127579,d3/AFR/Madagascar
+842,d3/AFR/Mali
+917,d3/AFR/Mozambique
+161,d3/AFR/Mauritania
+0,d3/AFR/Mauritius
+18,d3/AFR/Malawi
+18,d3/AFR/Namibia
+2573,d3/AFR/Niger
+27990,d3/AFR/Nigeria
+45,d3/AFR/Rwanda
+298,d3/AFR/Senegal
+132,d3/AFR/Sierra Leone
+1471,d3/AFR/South Sudan
+0,d3/AFR/Sao Tome and Principe
+0,d3/AFR/Kingdom of Eswatini
+0,d3/AFR/Seychelles
+1767,d3/AFR/Chad
+156,d3/AFR/Togo
+778,d3/AFR/United Republic of Tanzania
+907,d3/AFR/Uganda
+267,d3/AFR/South Africa
+124,d3/AFR/Zambia
+2,d3/AFR/Zimbabwe
+64,d3/AMR/Argentina
+0,d3/AMR/Antigua and Barbuda
+3,d3/AMR/Bahamas
+0,d3/AMR/Belize
+0,d3/AMR/Bolivia (Plurinational State of)
+17211,d3/AMR/Brazil
+0,d3/AMR/Barbados
+113,d3/AMR/Canada
+11,d3/AMR/Chile
+230,d3/AMR/Colombia
+10,d3/AMR/Costa Rica
+1,d3/AMR/Cuba
+0,d3/AMR/Dominica
+0,d3/AMR/Dominican Republic
+0,d3/AMR/Ecuador
+0,d3/AMR/Grenada
+0,d3/AMR/Guatemala
+0,d3/AMR/Guyana
+0,d3/AMR/Honduras
+0,d3/AMR/Haiti
+0,d3/AMR/Jamaica
+0,d3/AMR/Saint Kitts and Nevis
+1,d3/AMR/Saint Lucia
+20,d3/AMR/Mexico
+0,d3/AMR/Nicaragua
+0,d3/AMR/Panama
+2,d3/AMR/Peru
+0,d3/AMR/Paraguay
+0,d3/AMR/El Salvador
+0,d3/AMR/Suriname
+0,d3/AMR/Trinidad and Tobago
+9,d3/AMR/Uruguay
+1282,d3/AMR/United States of America
+0,d3/AMR/Saint Vincent and the Grenadines
+552,d3/AMR/Venezuela (Bolivarian Republic of)
+177,d3/EMR/Afghanistan
+169,d3/EMR/United Arab Emirates
+0,d3/EMR/Bahrain
+0,d3/EMR/Djibouti
+15,d3/EMR/Egypt
+5,d3/EMR/Iran (Islamic Republic of)
+1222,d3/EMR/Iraq
+41,d3/EMR/Jordan
+12,d3/EMR/Kuwait
+1063,d3/EMR/Lebanon
+153,d3/EMR/Libya
+5,d3/EMR/Morocco
+12,d3/EMR/Oman
+2068,d3/EMR/Pakistan
+4,d3/EMR/Qatar
+933,d3/EMR/Saudi Arabia
+3431,d3/EMR/Sudan
+185,d3/EMR/Somalia
+26,d3/EMR/Syrian Arab Republic
+1367,d3/EMR/Tunisia
+8408,d3/EMR/Yemen
+481,d3/EUR/Albania
+0,d3/EUR/Andorra
+7,d3/EUR/Armenia
+148,d3/EUR/Austria
+261,d3/EUR/Azerbaijan
+466,d3/EUR/Belgium
+1201,d3/EUR/Bulgaria
+1400,d3/EUR/Bosnia and Herzegovina
+191,d3/EUR/Belarus
+217,d3/EUR/Switzerland
+6,d3/EUR/Cyprus
+575,d3/EUR/Czech Republic
+499,d3/EUR/Germany
+15,d3/EUR/Denmark
+281,d3/EUR/Spain
+26,d3/EUR/Estonia
+10,d3/EUR/Finland
+2614,d3/EUR/France
+839,d3/EUR/United Kingdom of Great Britain and Northern Ireland
+3916,d3/EUR/Georgia
+44,d3/EUR/Greece
+49,d3/EUR/Croatia
+23,d3/EUR/Hungary
+83,d3/EUR/Ireland
+8,d3/EUR/Iceland
+1018,d3/EUR/Israel
+1613,d3/EUR/Italy
+12348,d3/EUR/Kazakhstan
+2246,d3/EUR/Kyrgyzstan
+831,d3/EUR/Lithuania
+24,d3/EUR/Luxembourg
+2,d3/EUR/Latvia
+0,d3/EUR/Monaco
+86,d3/EUR/Republic of Moldova
+1884,d3/EUR/The Republic of North Macedonia 
+32,d3/EUR/Malta
+0,d3/EUR/Montenegro
+80,d3/EUR/Netherlands
+17,d3/EUR/Norway
+1362,d3/EUR/Poland
+9,d3/EUR/Portugal
+1616,d3/EUR/Romania
+4012,d3/EUR/Russian Federation
+11,d3/EUR/San Marino
+20,d3/EUR/Serbia
+312,d3/EUR/Slovakia
+26,d3/EUR/Slovenia
+20,d3/EUR/Sweden
+7,d3/EUR/Tajikistan
+0,d3/EUR/Turkmenistan
+2785,d3/EUR/Turkey
+57128,d3/EUR/Ukraine
+1963,d3/EUR/Uzbekistan
+4744,d3/SEAR/Bangladesh
+0,d3/SEAR/Bhutan
+1743,d3/SEAR/Indonesia
+7367,d3/SEAR/India
+53,d3/SEAR/Sri Lanka
+3,d3/SEAR/Maldives
+5343,d3/SEAR/Myanmar
+460,d3/SEAR/Nepal
+0,d3/SEAR/Democratic People's Republic of Korea
+5296,d3/SEAR/Thailand
+37,d3/SEAR/Timor-Leste
+273,d3/WPR/Australia
+1,d3/WPR/Brunei Darussalam
+3022,d3/WPR/China
+0,d3/WPR/Cook Islands
+0,d3/WPR/Fiji
+0,d3/WPR/Micronesia (Federated States of)
+752,d3/WPR/Japan
+632,d3/WPR/Cambodia
+0,d3/WPR/Kiribati
+189,d3/WPR/Republic of Korea
+708,d3/WPR/Lao People's Democratic Republic
+0,d3/WPR/Marshall Islands
+2,d3/WPR/Mongolia
+970,d3/WPR/Malaysia
+0,d3/WPR/Niue
+0,d3/WPR/Nauru
+2176,d3/WPR/New Zealand
+47722,d3/WPR/Philippines
+0,d3/WPR/Palau
+0,d3/WPR/Papua New Guinea
+165,d3/WPR/Singapore
+0,d3/WPR/Solomon Islands
+34,d3/WPR/Tonga
+0,d3/WPR/Tuvalu
+8611,d3/WPR/Viet Nam
+0,d3/WPR/Vanuatu
+47,d3/WPR/Samoa
