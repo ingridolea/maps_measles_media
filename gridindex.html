@@ -77,7 +77,7 @@ var states = [],
     //
     // DON'T EDIT!
     //
-    stateKey = 'stateAbbreviation',
+    stateKey = 'state abbreviation',
     rowsArr = [
     {
         "state": "Alabama",
@@ -336,7 +336,7 @@ d3.select("#grid").text().split("\n").forEach(function(line, i) {
   while (m = re.exec(line)) {
     states.push({
       name: m[0],
-      data: _.result(_.findWhere(rowsArr, { 'stateAbbreviation': m[0]}), dataKey),
+      data: _.result(_.findWhere(rowsArr, { 'state abbreviation': m[0]}), dataKey),
       x: m.index / 3,
       y: i
     });
