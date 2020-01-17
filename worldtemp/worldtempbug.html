@@ -1,0 +1,501 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Generic - Theory by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="multiline.css">
+    	<script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+	</head>
+	<body class="subpage">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">Maps, Measles, and Media</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="USmap.html">US Spatial</a>
+						<a href="UStemp.html">US Temporal</a>
+						<a href="worldmap.html">Global Spatial</a>
+						<a href="worldtemp.html">Global Temporal</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+	
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Global Measles Outbreaks</h2>
+						<p>WHO Data from 2011 - 2019</p>
+					</header>
+			
+			<div class="chart-wrapper" id="chart-line1"></div>
+
+			<script type="text/javascript">
+				var formatDate = d3.time.format("%Y-%m%d");
+    					
+    			d3.csv('world_temp.csv', function(error, data) {
+    					
+    				data.forEach(function (d) {
+	        			d.year = formatDate.parse(d.year);
+	        			d.Angola = +d.Angola;
+	        			d.Burundi = +d.Burundi;
+	        			d.Benin = +d.Benin;
+	        			d.Burkina_Faso = +d.Burkina_Faso;
+	       				d.Botswana = +d.Botswana;
+	       				d.Central_African_Republic = +d.Central_African_Republic;
+	       				d.Cote_d_Ivoire = +d.Cote_d_Ivoire;
+	       				d.Cameroon = +d.Cameroon;
+	       				d.Democratic_Republic_of_the_Congo = +d.Democratic_Republic_of_the_Congo;
+	       				d.Congo = +d.Congo;
+	       				d.Comoros = +d.Comoros;
+	       				d.Cabo_Verde = +d.Cabo_Verde;
+	        			d.Algeria = +d.Algeria;
+	        			d.Eritrea = +d.Eritrea;
+	        			d.Ethiopia = +d.Ethiopia;
+	        			d.Gabon = +d.Gabon;
+	       				d.Ghana = +d.Ghana;
+	       				d.Guinea = +d.Guinea;
+	       				d.Gambia = +d.Gambia;
+						d.Guinea-Bissau = +d.Guinea-Bissau;
+						d.Equatorial_Guinea = +d.Equatorial_Guinea;
+						d.Kenya = +d.Kenya;
+						d.Liberia = +d.Liberia;
+						d.Lesotho = +d.Lesotho;
+						d.Madagascar = +d.Madagascar;
+						d.Mali = +d.Mali;
+						d.Mozambique = +d.Mozambique;
+						d.Mauritania = +d.Mauritania;							
+						d.Mauritius = +d.Mauritius;
+						d.Malawi = +d.Malawi;
+						d.Namibia = +d.Namibia;
+						d.Niger = +d.Niger;
+						d.Nigeria = +d.Nigeria;
+						d.Rwanda = +d.Rwanda;
+						d.Senegal = +d.Senegal;
+						d.Sierra_Leone = +d.Sierra_Leone;
+						d.South_Sudan = +d.South_Sudan;
+						d.Sao_Tome_and_Principe = +d.Sao_Tome_and_Principe;
+						d.Kingdom_of_Eswatini = +d.Kingdom_of_Eswatini;
+						d.Seychelles = +d.Seychelles;
+						d.Chad = +d.Chad;
+						d.Togo = +d.Togo;
+						d.United_Republic_of_Tanzania = +d.United_Republic_of_Tanzania;
+						d.Uganda = +d.Uganda;
+						d.South_Africa = +d.South_Africa;
+						d.Zambia = +d.Zambia;
+						d.Zimbabwe = +d.Zimbabwe;
+						d.Argentina = +d.Argentina;
+						d.Antigua_and_Barbuda = +d.Antigua_and_Barbuda;
+						d.Bahamas = +d.Bahamas;
+						d.Belize = +d.Belize;
+						d.Bolivia = +d.Bolivia;
+						d.Brazil = +d.Brazil;
+						d.Barbados = +d.Barbados;
+						d.Canada = +d.Canada;
+						d.Chile = +d.Chile;
+						d.Colombia = +d.Colombia;
+						d.Costa_Rica = +d.Costa_Rica;
+						d.Cuba = +d.Cuba;
+						d.Dominica = +d.Dominica;
+						d.Dominican_Republic = +d.Dominican_Republic;
+						d.Ecuador = +d.Ecuador;
+						d.Grenada = +d.Grenada;
+						d.Guatemala = +d.Guatemala;
+						d.Guyana = +d.Guyana;
+						d.Honduras = +d.Honduras;
+						d.Haiti = +d.Haiti;
+						d.Jamaica = +d.Jamaica;
+						d.Saint_Kitts_and_Nevis = +d.Saint_Kitts_and_Nevis;
+						d.Saint_Lucia = +d.Saint_Lucia;
+						d.Mexico = +d.Mexico;
+						d.Nicaragua = +d.Nicaragua;
+						d.Panama = +d.Panama;
+						d.Peru = +d.Peru;
+						d.Paraguay = +d.Paraguay;
+						d.El_Salvador = +d.El_Salvador;
+						d.Suriname = +d.Suriname;
+						d.Trinidad_and_Tobago = +d.Trinidad_and_Tobago;
+						d.Uruguay = +d.Uruguay;
+						d.United_States_of_America = +d.United_States_of_America;
+						d.Saint_Vincent_and_the_Grenadines = +d.Saint_Vincent_and_the_Grenadines;
+						d.Venezuela = +d.Venezuela;
+						d.Afghanistan = +d.Afghanistan;
+						d.United_Arab_Emirates = +d.United_Arab_Emirates;
+						d.Bahrain = +d.Bahrain;
+						d.Djibouti = +d.Djibouti;
+						d.Egypt = +d.Egypt;
+						d.Iran= +d.Iran;
+						d.Iraq = +d.Iraq;
+						d.Jordan = +d.Jordan;
+						d.Kuwait = +d.Kuwait;
+						d.Lebanon = +d.Lebanon;
+						d.Libya = +d.Libya;
+						d.Morocco = +d.Morocco;
+						d.Oman = +d.Oman;
+						d.Pakistan = +d.Pakistan;
+						d.Qatar = +d.Qatar;
+						d.Saudi_Arabia = +d.Saudi_Arabia;
+						d.Sudan = +d.Sudan;
+						d.Somalia = +d.Somalia;
+						d.Syrian_Arab_Republic = +d.Syrian_Arab_Republic;
+						d.Tunisia = +d.Tunisia;
+						d.Yemen = +d.Yemen;
+						d.Albania = +d.Albania;
+						d.Andorra = +d.Andorra;
+						d.Armenia = +d.Armenia;
+						d.Austria = +d.Austria;
+						d.Azerbaijan = +d.Azerbaijan;
+						d.Belgium = +d.Belgium;
+						d.Bulgaria = +d.Bulgaria;
+						d.Bosnia_and_Herzegovina = +d.Bosnia_and_Herzegovina;
+						d.Belarus = +d.Belarus;
+						d.Switzerland = +d.Switzerland;
+						d.Cyprus = +d.Cyprus;
+						d.Czech_Republic = +d.Czech_Republic;
+						d.Germany = +d.Germany;
+						d.Denmark = +d.Denmark;
+						d.Spain = +d.Spain;
+						d.Estonia = +d.Estonia;
+						d.Finland = +d.Finland;
+						d.France = +d.France;
+						d.United_Kingdom_of_Great_Britain_and_Northern_Ireland = +d.United_Kingdom_of_Great_Britain_and_Northern_Ireland;
+						d.Georgia = +d.Georgia;
+						d.Greece = +d.Greece;
+						d.Croatia = +d.Croatia;
+						d.Hungary = +d.Hungary;
+						d.Ireland = +d.Ireland;
+						d.Iceland = +d.Iceland;
+						d.Israel = +d.Israel;
+						d.Italy = +d.Italy;
+						d.Kazakhstan = +d.Kazakhstan;
+						d.Kyrgyzstan = +d.Kyrgyzstan;
+						d.Lithuania = +d.Lithuania;
+						d.Luxembourg = +d.Luxembourg;
+						d.Latvia = +d.Latvia;
+						d.Monaco = +d.Monaco;
+						d.Republic_of_Moldova = +d.Republic_of_Moldova;
+						d.The_Republic_of_North_Macedonia_ = +d.The_Republic_of_North_Macedonia_;
+						d.Malta = +d.Malta;
+						d.Montenegro = +d.Montenegro;
+						d.Netherlands = +d.Netherlands;
+						d.Norway = +d.Norway;
+						d.Poland = +d.Poland;
+						d.Portugal = +d.Portugal;
+						d.Romania = +d.Romania;
+						d.Russian_Federation = +d.Russian_Federation;
+						d.San_Marino = +d.San_Marino;
+						d.Serbia = +d.Serbia;
+						d.Slovakia = +d.Slovakia;
+						d.Slovenia = +d.Slovenia;
+						d.Sweden = +d.Sweden;
+						d.Tajikistan = +d.Tajikistan;
+						d.Turkmenistan = +d.Turkmenistan;
+						d.Turkey = +d.Turkey;
+						d.Ukraine = +d.Ukraine;
+						d.Uzbekistan = +d.Uzbekistan;
+						d.Bangladesh = +d.Bangladesh;
+						d.Bhutan = +d.Bhutan;
+						d.Indonesia = +d.Indonesia;
+						d.India = +d.India;
+						d.Sri_Lanka = +d.Sri_Lanka;
+						d.Maldives = +d.Maldives;
+						d.Myanmar = +d.Myanmar;
+						d.Nepal = +d.Nepal;
+						d.Democratic_People_s_Republic_of_Korea = +d.Democratic_People_s_Republic_of_Korea;
+						d.Thailand = +d.Thailand;
+						d.Timor-Leste = +d.Timor-Leste;
+						d.Australia = +d.Australia;
+						d.Brunei_Darussalam = +d.Brunei_Darussalam;
+						d.China = +d.China;
+						d.Cook_Islands = +d.Cook_Islands;
+						d.Fiji = +d.Fiji;
+						d.Micronesia = +d.Micronesia;
+						d.Japan = +d.Japan;
+						d.Cambodia = +d.Cambodia;
+						d.Kiribati = +d.Kiribati;
+						d.Republic_of_Korea = +d.Republic_of_Korea;
+						d.Lao_People_s_Democratic_Republic = +d.Lao_People_s_Democratic_Republic;
+						d.Marshall_Islands = +d.Marshall_Islands;
+						d.Mongolia = +d.Mongolia;
+						d.Malaysia = +d.Malaysia;
+						d.Niue = +d.Niue;
+						d.Nauru = +d.Nauru;
+						d.New_Zealand = +d.New_Zealand;	
+						d.Philippines = +d.Philippines;
+						d.Palau = +d.Palau;
+						d.Papua_New_Guinea = +d.Papua_New_Guinea;
+						d.Singapore = +d.Singapore;
+						d.Solomon_Islands = +d.Solomon_Islands;
+						d.Tonga = +d.Tonga;
+						d.Tuvalu = +d.Tuvalu;
+						d.Viet_Nam = +d.Viet_Nam;
+						d.Vanuatu = +d.Vanuatu;
+						d.Samoa = +d.Samoa;
+    				});
+
+					var chart = makeLineChart(data, 'year', {
+					    'Angola': {column: 'Angola'},
+						'Burundi': {column: 'Burundi'},
+						'Benin': {column: 'Benin'},
+						'Burkina Faso': {column: 'Burkina_Faso'},
+						'Botswana': {column: 'Botswana'},
+						'Central African Republic': {column: 'Central_African_Republic'},
+						'Cote dIvoire': {column: 'Cote_d_Ivoire'},
+						'Cameroon': {column: 'Cameroon'},
+						'Democratic Republic of the Congo': {column: 'Democratic_Republic_of_the_Congo'},
+						'Congo': {column: 'Congo'},
+						'Comoros': {column: 'Comoros'},
+						'Cabo Verde': {column: 'Cabo_Verde'},
+						'Algeria': {column: 'Algeria'},
+						'Eritrea': {column: 'Eritrea'},
+						'Ethiopia': {column: 'Ethiopia'},
+						'Gabon': {column: 'Gabon'},
+						'Ghana': {column: 'Ghana'},
+						'Guinea': {column: 'Guinea'},
+						'Gambia': {column: 'Gambia'},
+						'Guinea-Bissau': {column: 'Guinea-Bissau'},
+						'Equatorial Guinea': {column: 'Equatorial_Guinea'},
+						'Kenya': {column: 'Kenya'},
+						'Liberia': {column: 'Liberia'},
+						'Lesotho': {column: 'Lesotho'},
+						'Madagascar': {column: 'Madagascar'},
+						'Mali': {column: 'Mali'},
+						'Mozambique': {column: 'Mozambique'},
+						'Mauritania': {column: 'Mauritania'},
+						'Mauritius': {column: 'Mauritius'},
+						'Malawi': {column: 'Malawi'},
+						'Namibia': {column: 'Namibia'},
+						'Niger': {column: 'Niger'},
+						'Nigeria': {column: 'Nigeria'},
+						'Rwanda': {column: 'Rwanda'},
+						'Senegal': {column: 'Senegal'},
+						'Sierra Leone': {column: 'Sierra_Leone'},
+						'South Sudan': {column: 'South_Sudan'},
+						'Sao Tome and Principe': {column: 'Sao_Tome_and_Principe'},
+						'Kingdom of Eswatini': {column: 'Kingdom_of_Eswatini'},
+						'Seychelles': {column: 'Seychelles'},
+						'Chad': {column: 'Chad'},
+						'Togo': {column: 'Togo'},
+						'United Republic of Tanzania': {column: 'United_Republic_of_Tanzania'},
+						'Uganda': {column: 'Uganda'},
+						'South Africa': {column: 'South_Africa'},
+						'Zambia': {column: 'Zambia'},
+						'Zimbabwe': {column: 'Zimbabwe'},
+						'Argentina': {column: 'Argentina'},
+						'Antigua and Barbuda': {column: 'Antigua_and_Barbuda'},
+						'Bahamas': {column: 'Bahamas'},
+						'Belize': {column: 'Belize'},
+						'Bolivia (Plurinational State of)': {column: 'Bolivia'},
+						'Brazil': {column: 'Brazil'},
+						'Barbados': {column: 'Barbados'},
+						'Canada': {column: 'Canada'},
+						'Chile': {column: 'Chile'},
+						'Colombia': {column: 'Colombia'},
+						'Costa Rica': {column: 'Costa_Rica'},
+						'Cuba': {column: 'Cuba'},
+						'Dominica': {column: 'Dominica'},
+						'Dominican Republic': {column: 'Dominican_Republic'},
+						'Ecuador': {column: 'Ecuador'},
+						'Grenada': {column: 'Grenada'},
+						'Guatemala': {column: 'Guatemala'},
+						'Guyana': {column: 'Guyana'},
+						'Honduras': {column: 'Honduras'},
+						'Haiti': {column: 'Haiti'},
+						'Jamaica': {column: 'Jamaica'},
+						'Saint Kitts and Nevis': {column: 'Saint_Kitts_and_Nevis'},
+						'Saint Lucia': {column: 'Saint_Lucia'},
+						'Mexico': {column: 'Mexico'},
+						'Nicaragua': {column: 'Nicaragua'},
+						'Panama': {column: 'Panama'},
+						'Peru': {column: 'Peru'},
+						'Paraguay': {column: 'Paraguay'},
+						'El Salvador': {column: 'El_Salvador'},
+						'Suriname': {column: 'Suriname'},
+						'Trinidad and Tobago': {column: 'Trinidad_and_Tobago'},
+						'Uruguay': {column: 'Uruguay'},
+						'United States of America': {column: 'United_States_of_America'},
+						'Saint Vincent and the Grenadines': {column: 'Saint_Vincent_and_the_Grenadines'},
+						'Venezuela (Bolivarian Republic of)': {column: 'Venezuela'},
+						'Afghanistan': {column: 'Afghanistan'},
+						'United Arab Emirates': {column: 'United_Arab_Emirates'},
+						'Bahrain': {column: 'Bahrain'},
+						'Djibouti': {column: 'Djibouti'},
+						'Egypt': {column: 'Egypt'},
+						'Iran (Islamic Republic of)': {column: 'Iran'},
+						'Iraq': {column: 'Iraq'},
+						'Jordan': {column: 'Jordan'},
+						'Kuwait': {column: 'Kuwait'},
+						'Lebanon': {column: 'Lebanon'},
+						'Libya': {column: 'Libya'},
+						'Morocco': {column: 'Morocco'},
+						'Oman': {column: 'Oman'},
+						'Pakistan': {column: 'Pakistan'},
+						'Qatar': {column: 'Qatar'},
+						'Saudi Arabia': {column: 'Saudi_Arabia'},
+						'Sudan': {column: 'Sudan'},
+						'Somalia': {column: 'Somalia'},
+						'Syrian Arab Republic': {column: 'Syrian_Arab_Republic'},
+						'Tunisia': {column: 'Tunisia'},
+						'Yemen': {column: 'Yemen'},
+						'Albania': {column: 'Albania'},
+						'Andorra': {column: 'Andorra'},
+						'Armenia': {column: 'Armenia'},
+						'Austria': {column: 'Austria'},
+						'Azerbaijan': {column: 'Azerbaijan'},
+						'Belgium': {column: 'Belgium'},
+						'Bulgaria': {column: 'Bulgaria'},
+						'Bosnia and Herzegovina': {column: 'Bosnia_and_Herzegovina'},
+						'Belarus': {column: 'Belarus'},
+						'Switzerland': {column: 'Switzerland'},
+						'Cyprus': {column: 'Cyprus'},
+						'Czech Republic': {column: 'Czech_Republic'},
+						'Germany': {column: 'Germany'},
+						'Denmark': {column: 'Denmark'},
+						'Spain': {column: 'Spain'},
+						'Estonia': {column: 'Estonia'},
+						'Finland': {column: 'Finland'},
+						'France': {column: 'France'},
+						'United Kingdom of Great Britain and Northern Ireland': {column: 'United_Kingdom_of_Great_Britain_and_Northern_Ireland'},
+						'Georgia': {column: 'Georgia'},
+						'Greece': {column: 'Greece'},
+						'Croatia': {column: 'Croatia'},
+						'Hungary': {column: 'Hungary'},
+						'Ireland': {column: 'Ireland'},
+						'Iceland': {column: 'Iceland'},
+						'Israel': {column: 'Israel'},
+						'Italy': {column: 'Italy'},
+						'Kazakhstan': {column: 'Kazakhstan'},
+						'Kyrgyzstan': {column: 'Kyrgyzstan'},
+						'Lithuania': {column: 'Lithuania'},
+						'Luxembourg': {column: 'Luxembourg'},
+						'Latvia': {column: 'Latvia'},
+						'Monaco': {column: 'Monaco'},
+						'Republic of Moldova': {column: 'Republic_of_Moldova'},
+						'The Republic of North Macedonia ': {column: 'The_Republic_of_North_Macedonia_'},
+						'Malta': {column: 'Malta'},
+						'Montenegro': {column: 'Montenegro'},
+						'Netherlands': {column: 'Netherlands'},
+						'Norway': {column: 'Norway'},
+						'Poland': {column: 'Poland'},
+						'Portugal': {column: 'Portugal'},
+						'Romania': {column: 'Romania'},
+						'Russian Federation': {column: 'Russian_Federation'},
+						'San Marino': {column: 'San_Marino'},
+						'Serbia': {column: 'Serbia'},
+						'Slovakia': {column: 'Slovakia'},
+						'Slovenia': {column: 'Slovenia'},
+						'Sweden': {column: 'Sweden'},
+						'Tajikistan': {column: 'Tajikistan'},
+						'Turkmenistan': {column: 'Turkmenistan'},
+						'Turkey': {column: 'Turkey'},
+						'Ukraine': {column: 'Ukraine'},
+						'Uzbekistan': {column: 'Uzbekistan'},
+						'Bangladesh': {column: 'Bangladesh'},
+						'Bhutan': {column: 'Bhutan'},
+						'Indonesia': {column: 'Indonesia'},
+						'India': {column: 'India'},
+						'Sri Lanka': {column: 'Sri_Lanka'},
+						'Maldives': {column: 'Maldives'},
+						'Myanmar': {column: 'Myanmar'},
+						'Nepal': {column: 'Nepal'},
+						'Democratic Peoples Republic of Korea': {column: 'Democratic_People_s_Republic_of_Korea'},
+						'Thailand': {column: 'Thailand'},
+						'Timor-Leste': {column: 'Timor-Leste'},
+						'Australia': {column: 'Australia'},
+						'Brunei Darussalam': {column: 'Brunei_Darussalam'},
+						'China': {column: 'China'},
+						'Cook Islands': {column: 'Cook_Islands'},
+						'Fiji': {column: 'Fiji'},
+						'Micronesia (Federated States of)': {column: 'Micronesia'},
+						'Japan': {column: 'Japan'},
+						'Cambodia': {column: 'Cambodia'},
+						'Kiribati': {column: 'Kiribati'},
+						'Republic of Korea': {column: 'Republic_of_Korea'},
+						'Lao Peoples Democratic Republic': {column: 'Lao_People_s_Democratic_Republic'},
+						'Marshall Islands': {column: 'Marshall_Islands'},
+						'Mongolia': {column: 'Mongolia'},
+						'Malaysia': {column: 'Malaysia'},
+						'Niue': {column: 'Niue'},
+						'Nauru': {column: 'Nauru'},
+						'New Zealand': {column: 'New_Zealand'},
+						'Philippines': {column: 'Philippines'},
+						'Palau': {column: 'Palau'},
+						'Papua New Guinea': {column: 'Papua_New_Guinea'},
+						'Singapore': {column: 'Singapore'},
+						'Solomon Islands': {column: 'Solomon_Islands'},
+						'Tonga': {column: 'Tonga'},
+						'Tuvalu': {column: 'Tuvalu'},
+						'Viet Nam': {column: 'Viet_Nam'},
+						'Vanuatu': {column: 'Vanuatu'},
+						'Samoa': {column: 'Samoa'}
+					}, {xAxis: 'Year', yAxis: 'Cases'});
+					chart.bind("#chart-line1");
+				    chart.render();
+
+
+				});
+			</script>
+			<script src="multiline.js" charset="utf-8"></script>
+
+			#<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+					
+					<div class="flex flex-2">
+						<article>
+							<div class="image fit">
+								<img src="images/pic01.jpg" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Praesent placerat magna</h3>
+							</header>
+							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="images/pic02.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Fusce pellentesque tempus</h3>
+							</header>
+							<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+						</div>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+							<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
