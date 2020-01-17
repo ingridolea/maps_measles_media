@@ -323,7 +323,7 @@
 					    .attr("dy", ".35em")
 					    .text(function(d) { return d.name; });
 					  
-					var legend = d3.select('body')
+					var legend = d3.select("body")
 					  .insert('div', ":first-child")
 					    .attr("id", "legend")
 					  .append('ul')
