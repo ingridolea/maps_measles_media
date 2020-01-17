@@ -323,10 +323,9 @@
 					    .attr("dy", ".35em")
 					    .text(function(d) { return d.name; });
 					  
-					var legend = d3.select("body")
-					  .insert('div', ":first-child")
+					var legend = d3.select("#grid-map-usa")
 					    .attr("id", "legend")
-					  .append('ul')
+					    .append('ul')
 					    .attr('class', 'list-inline');
 
 					var keys = legend.selectAll('li.key')
