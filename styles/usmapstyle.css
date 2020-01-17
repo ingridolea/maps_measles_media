@@ -1,0 +1,52 @@
+				
+.state body {
+	font: 12px sans-serif;
+}
+
+.state rect {
+	fill: #a6a8ab;
+}
+
+.state text {
+	font: 12px sans-serif;
+	font-weight: bold;
+	text-anchor: middle;
+	fill: white;
+}
+
+.q0-5 rect { fill: #e3d2c7; }
+.q1-5 rect { fill: #e6b5a6; }
+.q2-5 rect { fill: #e98a75; }
+.q3-5 rect { fill: #ed5e44; }
+.q4-5 rect { fill: #ef4123; }
+
+
+#legend {
+	padding: 1.5em 0 0 1.5em;
+}
+
+.list-inline {
+	padding-left: 0;
+	list-style: none;
+}
+
+.list-inline > li {
+	display: inline-block;
+}
+
+li.key {
+	border-top-width: 15px;
+	border-top-style: solid;
+	font-size: 1em;
+	width: 10%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+li.q0-5 { color: #e3d2c7; }
+li.q1-5 { color: #e6b5a6; }
+li.q2-5 { color: #e98a75; }
+li.q3-5 { color: #ed5e44; }
+li.q4-5 { color: #ef4123; }
+
+				
