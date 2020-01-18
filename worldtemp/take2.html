@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="multiline.css">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+
+    <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+</head>
+<body>
+<div class="chart-wrapper" id="chart-line1"></div>
+
+<script type="text/javascript">
+    d3.csv('multiline_data.csv', function(error, data) {
+    data.forEach(function (d) {
+        d.year = +d.year;
+        d.Madagascar = +d.Madagascar;
+        d.Philippines = +d.Philippines;
+        d.Brazil = +d.Brazil;
+        d.India = +d.India;
+        d.USA = +d.USA;
+        d.Canada = +d.Canada;
+    });
+
+    var chart = makeLineChart(data, 'year', {
+        'Madagascar': {column: 'Madagascar'},
+        'Philippines': {column: 'Philippines'},
+        'Brazil': {column: 'Brazil'},
+        'India': {column: 'India'},
+        'USA': {column:'USA'},
+        'Canada':{column:'Canada'}
+    }, {xAxis: 'Years', yAxis: 'Amount'});
+    chart.bind("#chart-line1");
+    chart.render();
+
+});
+</script>
+<script src="multiline.js" charset="utf-8"></script>
+</body>
+</html>
