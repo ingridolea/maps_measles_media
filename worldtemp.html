@@ -57,39 +57,46 @@
 						<p>Even with implementation of routine immunization, measles continues to circulate globally due to suboptimal vaccination coverage and population immunity gaps. Any community with less than 95% population immunity is at risk for an outbreak. If an outbreak response is not timely and comprehensive, the virus will find its way into more pockets of vulnerable individuals and potentially spread within and beyond the affected countries.</p>
 						
 						<p>As long as measles continues to circulate anywhere in the world, no country can be assured to avoid importation. The WHO recommends that countries protect their populations through high vaccine coverage achieved primarily through routine immunization programs, and where necessary through supplemental immunization activities designed to assure that susceptible individuals are vaccinated.</p>
-					
-						<p>This graph further illustrates the variety of trend lines and magnitude of outbreaks experienced worldwide. The following countries were selected to represent a variety of continents as well as a neighbouring country to the US. Note that the line dips below zero to smooth out the curve; there are no negative case numbers.</a></p> 
+
+					<header class="align-center">
+						<h2>Measles in the Most Populous Countries</h2>
+						<p>The number of measles cases from 2011 - 2019 in China, Indonesia, Brazil, India, Pakistan and the USA </p>
+					</header>
+						<p>This graph of the six most populous countries further illustrates the variety of trend lines and magnitude of outbreaks experienced worldwide. Please note that the line goes below zero to smooth out the curve; there are no negative cases. </a></p>  
 					
 					<div class="chart-wrapper" id="chart-line1"></div>
 					
 					<script type="text/javascript">
-					    d3.csv('data/worldtemp/processeddata.csv', function(error, data) {
+					    d3.csv('data/worldtemp/finaldata.csv', function(error, data) {
 					    data.forEach(function (d) {
 					        d.year = +d.year;
-					        d.Madagascar = +d.Madagascar;
-					        d.Philippines = +d.Philippines;
+					        d.China = +d.China;
+					        d.Indonesia = +d.Indonesia;
 					        d.Brazil = +d.Brazil;
 					        d.India = +d.India;
 					        d.USA = +d.USA;
-					        d.Canada = +d.Canada;
+					        d.Pakistan = +d.Pakistan;
 					    });
 
 					    var chart = makeLineChart(data, 'year', {
-					        'Madagascar': {column: 'Madagascar'},
-					        'Philippines': {column: 'Philippines'},
+					        'China': {column: 'China'},
+					        'Indonesia': {column: 'Indonesia'},
 					        'Brazil': {column: 'Brazil'},
 					        'India': {column: 'India'},
 					        'USA': {column:'USA'},
-					        'Canada':{column:'Canada'}
+					        'Pakistan':{column:'Pakistan'}
 					    }, {xAxis: 'Years', yAxis: 'Amount'});
 					    chart.bind("#chart-line1");
 					    chart.render();
 
 					});
-			
-
+					
 					</script>
 					<script src="scripts/worldtempscript.js" charset="utf-8"></script>
+					</center>
+					<p><i>Data from the.<i><a href="https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/measles_monthlydata/en/"> World Health Organization.</a>
+
+					<p><i>Visualization adapted from</i><a href="http://bl.ocks.org/asielen/44ffca2877d0132572cb"> Andrew Sielen's Block.</a></p>
 
 					<script></script>
 						<a class="twitter-share-button" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsclazenby.github.io%2Fmaps_measles_media%2Fworldtemp.html&text=Check%20out%20this%20data%20on%20measles%21&hashtags=Code4Policy2020" data-size="large"> Tweet<link rel="canonical" href="/web/tweet-button"></a>
@@ -98,7 +105,7 @@
 
 <!-- 					<div class="flex flex-2">
 
-					<!--<div class="flex flex-2">
+					<!-- <div class="flex flex-2">
 dc92a0860786f4fceb6ec878bf61ccfff99180ab
 
 						<article>
