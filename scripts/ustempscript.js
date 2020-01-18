@@ -37,7 +37,7 @@
      .style('text-anchor', 'end')
      .html('Source: Interbrand');
 
-     let year = 2000;
+     let year = 1;
     
   d3.csv('../data/ustemp/temporalmeasles.csv').then(function(data) {
     //if (error) throw error;
@@ -245,8 +245,8 @@
     
       yearText.html(~~year);
      
-     if(year == 2018) ticker.stop();
-     year = d3.format('.1f')((+year) + 0.1);
+     if(year == 21) ticker.stop();
+     year = d3.format('.1f')((+year) + 1);
    },tickDuration);
 
  });
