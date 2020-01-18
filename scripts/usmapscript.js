@@ -323,7 +323,7 @@
 					    .attr("dy", ".35em")
 					    .text(function(d) { return d.name; });
 					  
-					var legend = d3.select("#grid-map-usa")
+					var legend = d3.select("#legend-container")
 					    .attr("id", "legend")
 					    .append('ul')
 					    .attr('class', 'list-inline');
