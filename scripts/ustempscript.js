@@ -5,7 +5,7 @@
     
     
     
-    var tickDuration = 500;
+    var tickDuration = 800;
     
     var top_n = 12;
     var height = 600;
@@ -49,7 +49,7 @@
         d.lastValue = +d.lastValue,
         d.value = isNaN(d.value) ? 0 : d.value,
         d.year = +d.year,
-        d.colour = d3.hsl(Math.random()*360,0.75,0.75)
+        d.colour = d3.hsl(90,0.47,0.73)
       });
 
      console.log(data);
@@ -178,7 +178,7 @@
         .enter()
         .append('text')
         .attr('class', 'label')
-        .attr('x', d => x(d.value)-8)
+        .attr('x', d => x(d.value)+100)
         .attr('y', d => y(top_n+1)+5+((y(1)-y(0))/2))
         .style('text-anchor', 'end')
         .html(d => d.name)    
@@ -192,7 +192,7 @@
           .transition()
           .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('x', d => x(d.value)-8)
+            .attr('x', d => x(d.value)+100)
             .attr('y', d => y(d.rank)+5+((y(1)-y(0))/2)+1);
      
        labels
@@ -200,7 +200,7 @@
           .transition()
             .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('x', d => x(d.value)-8)
+            .attr('x', d => x(d.value)+100)
             .attr('y', d => y(top_n+1)+5)
             .remove();
          
@@ -212,7 +212,7 @@
           .enter()
           .append('text')
           .attr('class', 'valueLabel')
-          .attr('x', d => x(d.value)+5)
+          .attr('x', d => 900)
           .attr('y', d => y(top_n+1)+5)
           .text(d => d3.format(',.0f')(d.lastValue))
           .transition()
@@ -224,7 +224,7 @@
           .transition()
             .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('x', d => x(d.value)+5)
+            .attr('x', d => 900)
             .attr('y', d => y(d.rank)+5+((y(1)-y(0))/2)+1)
             .tween("text", function(d) {
                let i = d3.interpolateRound(d.lastValue, d.value);
@@ -239,7 +239,7 @@
         .transition()
           .duration(tickDuration)
           .ease(d3.easeLinear)
-          .attr('x', d => x(d.value)+5)
+          .attr('x', d => 900)
           .attr('y', d => y(top_n+1)+5)
           .remove();
     
