@@ -1,4 +1,7 @@
-				
+/*
+external style sheet applying only to USmap viz
+*/
+
 .state body {
 	font: 12px sans-serif;
 }
