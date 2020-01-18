@@ -63,7 +63,7 @@ d3.csv("data/worldmap/d3.csv", function(d) {
     .data(root.leaves())
     .enter().append("a")
       .attr("target", "_blank")
-      .attr("xlink:href", function(d) { var p = d.data.path.split("/"); return "https://github.com/" + p.slice(0, 2).join("/") + "/blob/v" + version[p[1]] + "/src/" + p.slice(2).join("/"); })
+      .attr("xlink:href", function(d) { var p = d.data.path.split("/"); return "#" })
       .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; });
 
   cell.append("rect")
