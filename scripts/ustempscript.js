@@ -23,21 +23,21 @@
     let title = svg.append('text')
      .attr('class', 'title')
      .attr('y', 24)
-     .html('18 years of Interbrand’s Top Global Brands');
+     .html('Measles Outbreaks in 2019');
   
     let subTitle = svg.append("text")
      .attr("class", "subTitle")
      .attr("y", 55)
-     .html("Brand value, $m");
+     .html("Number of cases");
    
     let caption = svg.append('text')
      .attr('class', 'caption')
      .attr('x', width)
      .attr('y', height-5)
      .style('text-anchor', 'end')
-     .html('Source: Interbrand');
+     .html('');
 
-     let year = 1;
+     let year = 3;
     
   d3.csv('../data/ustemp/temporalmeasles.csv').then(function(data) {
     //if (error) throw error;

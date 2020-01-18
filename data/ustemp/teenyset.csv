@@ -1,0 +1,31 @@
+﻿name,value,year,lastValue,rank
+New York,2,1,0,1
+New York,2,2,NA,1
+New York,2,3,NA,2
+New York,3,4,1,2
+New York,3,5,3,2
+New York,5,6,3,2
+New York,6,7,5,2
+New York,7,8,6,3
+New York,7,9,7,3
+New York,8,10,7,3
+California,NA,1,0,2
+California,NA,2,NA,2
+California,NA,3,NA,2
+California,NA,4,NA,3
+California,NA,5,NA,3
+California,NA,6,NA,3
+California,NA,7,NA,3
+California,1,8,NA,2
+California,2,9,1,2
+California,3,10,2,2
+Measlesland,NA,1,0,1
+Measlesland,2,2,3,1
+Measlesland,5,3,4,1
+Measlesland,7,4,5,1
+Measlesland,8,5,7,1
+Measlesland,9,6,8,1
+Measlesland,12,7,9,1
+Measlesland,14,8,12,1
+Measlesland,15,9,14,1
+Measlesland,17,10,15,1
