@@ -6,9 +6,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="styles/styles.css" />
-		<link rel="stylesheet" type="text/css" href="styles/worldtempstyle.css">
-		<script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
-
 	</head>
 	<body class="subpage">
 
@@ -39,62 +36,18 @@
 						<h2>Global Measles Outbreaks</h2>
 						<p>WHO Data from 2011 - 2019 </p>
 					</header>
-					<p>This will include copy</a></p> 
+					<p>This page will contain a line chart of countries and their annual amounts of measles cases from 2011 - 2019. To see the preliminary data, please see <a href=https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/measles_monthlydata/en>this data</a></p> 
 
+					<iframe title="The Global Burden of Measles from 2011 - 2019" aria-label="Table" id="datawrapper-chart-9Iqfz" src="//datawrapper.dwcdn.net/9Iqfz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="631"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
 					
-
-
-
-
-					<iframe title="The Global Burden of Measles from 2011 - 2019" aria-label="Table" id="datawrapper-chart-9Iqfz" src="//datawrapper.dwcdn.net/9Iqfz/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="611"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-
-
-					<!-- THIS IS THE CODE FOR THE SECOND CHART -->
-
-					
-
-					<header class="align-center">
-						<h2>I HATE THIS GRAPH</h2>
-						<p>But it did work! </p>
-					</header>
-						<p>This will include copy</a></p> 
-					
-					<div class="chart-wrapper" id="chart-line1"></div>
-					
-					<script type="text/javascript">
-					    d3.csv('data/worldtemp/processeddata.csv', function(error, data) {
-					    data.forEach(function (d) {
-					        d.year = +d.year;
-					        d.Madagascar = +d.Madagascar;
-					        d.Philippines = +d.Philippines;
-					        d.Brazil = +d.Brazil;
-					        d.India = +d.India;
-					        d.USA = +d.USA;
-					        d.Canada = +d.Canada;
-					    });
-
-					    var chart = makeLineChart(data, 'year', {
-					        'Madagascar': {column: 'Madagascar'},
-					        'Philippines': {column: 'Philippines'},
-					        'Brazil': {column: 'Brazil'},
-					        'India': {column: 'India'},
-					        'USA': {column:'USA'},
-					        'Canada':{column:'Canada'}
-					    }, {xAxis: 'Years', yAxis: 'Amount'});
-					    chart.bind("#chart-line1");
-					    chart.render();
-
-					});
+					<script type="text/javascript" src="styles/twitter.js">
+						<a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+						
 					</script>
-					<script src="scripts/worldtempscript.js" charset="utf-8"></script>
 
-
-
-<!-- 					<div class="flex flex-2">
-=======
+					
+					
 					<!--<div class="flex flex-2">
->>>>>>> dc92a0860786f4fceb6ec878bf61ccfff99180ab
-
 						<article>
 							<div class="image fit">
 								<img src="images/pic01.jpg" alt="Pic 01" />
@@ -119,16 +72,11 @@
 								<a href="#" class="button special">More</a>
 							</footer>
 						</article>
-					</div> -->
-
+					</div>
 				</div>
-			</section> 
+			</section> -->
 
-
-
-			
-
-		<!-- Footer 
+		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<div class="flex">
