@@ -66,21 +66,21 @@
 					    d3.csv('data/worldtemp/processeddata.csv', function(error, data) {
 					    data.forEach(function (d) {
 					        d.year = +d.year;
-					        d.Madagascar = +d.Madagascar;
-					        d.Philippines = +d.Philippines;
+					        d.China = +d.China;
+					        d.Indonesia = +d.Indonesia;
 					        d.Brazil = +d.Brazil;
 					        d.India = +d.India;
 					        d.USA = +d.USA;
-					        d.Canada = +d.Canada;
+					        d.Pakistan = +d.Pakistan;
 					    });
 
 					    var chart = makeLineChart(data, 'year', {
-					        'Madagascar': {column: 'Madagascar'},
-					        'Philippines': {column: 'Philippines'},
+					        'China': {column: 'China'},
+					        'Indonesia': {column: 'Indonesia'},
 					        'Brazil': {column: 'Brazil'},
 					        'India': {column: 'India'},
 					        'USA': {column:'USA'},
-					        'Canada':{column:'Canada'}
+					        'Pakistan':{column:'Pakistan'}
 					    }, {xAxis: 'Years', yAxis: 'Amount'});
 					    chart.bind("#chart-line1");
 					    chart.render();
