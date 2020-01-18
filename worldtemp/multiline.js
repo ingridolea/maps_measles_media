@@ -32,7 +32,6 @@ function makeLineChart(dataset, xName, yObjs, axisLables) {
     }
 
 //Formatter functions for the axes
-    chartObj.formatAsDate = d3.time.format("%Y-%m-%d");
     chartObj.formatAsNumber = d3.format(".0f");
     chartObj.formatAsDecimal = d3.format(".2f");
     chartObj.formatAsCurrency = d3.format("$.2f");
@@ -45,14 +44,13 @@ function makeLineChart(dataset, xName, yObjs, axisLables) {
         
     };
 
-    chartObj.xFormatter = chartObj.formatAsDate;
+    chartObj.xFormatter = chartObj.formatAsNumber;
     chartObj.yFormatter = chartObj.formatAsFloat;
 
     chartObj.bisectYear = d3.bisector(chartObj.xFunct).left; //< Can be overridden in definition
 
 //Create scale functions
-    // chartObj.xScale = d3.scale.linear().range([0, chartObj.width]).domain(d3.extent(chartObj.data, chartObj.xFunct)); //< Can be overridden in definition
-    chartObj.xScale = d3.time.scale().range([0, chartObj.width]).domain(d3.extent(chartObj.data, chartObj.xFunct));    // values between for month of january
+    chartObj.xScale = d3.scale.linear().range([0, chartObj.width]).domain(d3.extent(chartObj.data, chartObj.xFunct)); //< Can be overridden in definition
 
 // Get the max of every yFunct
     chartObj.max = function (fn) {
@@ -60,8 +58,10 @@ function makeLineChart(dataset, xName, yObjs, axisLables) {
     };
     chartObj.yScale = d3.scale.linear().range([chartObj.height, 0]).domain([0, d3.max(chartObj.yFuncts.map(chartObj.max))]);
 
+    chartObj.formatAsYear = d3.format("");
+
 //Create axis
-    chartObj.xAxis = d3.svg.axis().scale(chartObj.xScale).orient("bottom") .tickFormat(chartObj.xFormatter); //< Can be overridden in definition
+    chartObj.xAxis = d3.svg.axis().scale(chartObj.xScale).orient("bottom").tickFormat(chartObj.xFormatter); //< Can be overridden in definition
 
     chartObj.yAxis = d3.svg.axis().scale(chartObj.yScale).orient("left").tickFormat(chartObj.yFormatter); //< Can be overridden in definition
 
