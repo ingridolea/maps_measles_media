@@ -36,58 +36,28 @@
 
 					<p>US state laws require children to have certain vaccines as a prerequisite for entry into daycare and kindergarden. All 50 state allow for medical exemptions from this requirement. Studies have shown that vaccine exemptions tend to cluster geographically, rendering some cummunities particularly vulnerable to outbreaks (Wang et al). Most states (45 and Washington DC) also grant religious exemptions and 15 states allow philosophical exemptions based on other non-religous personal or moral belief (Source: National Conference of State Legislatures, drawing on LexisNexis StateNet Database and the Immunization Action Coalition, May 2019).</p>
 
-
-
 					
-
+					<center>
 					<svg width="960" height="500"></svg>
-
 					<script id="grid" type="text/plain">
-					                              ME
-					               WI          VT NH
-					WA ID MT ND MN IL MI    NY MA RI
-					OR NV WY SD IA IN OH PA NJ CT
-					CA UT CO NE MO KY WV VA MD DE
-					   AZ NM KS AR TN NC SC
-					         OK LA MS AL GA
-					HI AK    TX             FL
+					AK                               ME
+					                           VT NH MA
+					   WA MT ND SD MN WI MI    NY CT RI
+					   OR ID WY NE IA IL IN OH PA NJ
+					CA NV UT CO KS MO KY WV DC MD DE
+					      AZ NM OK AR TN VA NC
+					         TX LA MS AL GA SC
+					   HI                FL
 					</script>
-
+					<div id="legend-container"></div>
 					<script src="jenks.js"></script>
 					<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
 					<script src="//d3js.org/d3.v3.min.js"></script>
-
-					<!-- Here was the entire code that created the viz, which I put in scripts/usmapscript.js, and reference right below -->
-
-					<script type="text/javascript" src="scripts/usmapscript.js"></script>
+					</center>
 
 					<p>Source: Seither R, Loretan C, Driver K, Mellerson JL, Knighton CL, Black CL. Vaccination Coverage with Selected Vaccines and Exemption Rates Among Children in Kindergarten - United States, 2018-2019 School Year. MMWR Morb Mortal Wkly Rep 2019;68:905-912. DOI: http:dx.doi.org/10.15585/mmwr.mm6841e1.</p>
 
 					<div class="flex flex-2">
-						<!--<article>
-							<div class="image fit">
-								<img src="images/pic01.jpg" alt="Pic 01" />
-							</div>
-							<header>
-								<h3>Vaccination rates by state</h3>
-							</header>
-							<p>I am a paragraph.</p>
-							<footer>
-								<a href="#" class="button special">More</a>
-							</footer>
-						</article>
-						<article>
-							<div class="image fit">
-								<img src="images/pic02.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h3>Measles cases by state</h3>
-							</header>
-							<p>I am another paragraph.</p>
-							<footer>
-								<a href="#" class="button special">More</a>
-							</footer>
-						</article>-->
 					</div>
 				</div>
 			</section>
@@ -115,6 +85,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="scripts/usmapscript.js"></script>
 
 	</body>
 </html>
