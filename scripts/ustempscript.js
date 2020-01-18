@@ -5,7 +5,7 @@
     
     
     
-    var tickDuration = 800;
+    var tickDuration = 500;
     
     var top_n = 12;
     var height = 600;
@@ -178,7 +178,7 @@
         .enter()
         .append('text')
         .attr('class', 'label')
-        .attr('x', d => 860)
+        .attr('x', d => 870)
         .attr('y', d => y(top_n+1)+5+((y(1)-y(0))/2))
         .style('text-anchor', 'end')
         .html(d => d.name)    
@@ -192,7 +192,7 @@
           .transition()
           .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('x', d => 860) //old code was x(d.value)+110)
+            .attr('x', d => 870) //old code was x(d.value)+110)
             .attr('y', d => y(d.rank)+5+((y(1)-y(0))/2)+1);
      
        labels
@@ -200,7 +200,7 @@
           .transition()
             .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('x', d => 860)
+            .attr('x', d => 870)
             .attr('y', d => y(top_n+1)+5)
             .remove();
          
