@@ -39,7 +39,7 @@
 
      let year = 2000;
     
-  d3.csv('data/ustemp/brand_values.csv').then(function(data) {
+  d3.csv('../data/ustemp/temporalmeasles.csv').then(function(data) {
     //if (error) throw error;
       
       console.log(data);
