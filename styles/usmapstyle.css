@@ -1,4 +1,7 @@
-				
+/*
+external style sheet applying only to USmap viz
+*/
+
 .state body {
 	font: 12px sans-serif;
 }
@@ -14,11 +17,11 @@
 	fill: white;
 }
 
-.q0-5 rect { fill: #e3d2c7; }
-.q1-5 rect { fill: #e6b5a6; }
-.q2-5 rect { fill: #e98a75; }
-.q3-5 rect { fill: #ed5e44; }
-.q4-5 rect { fill: #ef4123; }
+.q0-5 rect { fill: #C1B0D5; }
+.q1-5 rect { fill: #B09AC9; }
+.q2-5 rect { fill: #9F84BD; }
+.q3-5 rect { fill: #836D9B; }
+.q4-5 rect { fill: #665479; }
 
 
 #legend {
@@ -43,10 +46,8 @@ li.key {
 	padding-right: 0;
 }
 
-li.q0-5 { color: #e3d2c7; }
-li.q1-5 { color: #e6b5a6; }
-li.q2-5 { color: #e98a75; }
-li.q3-5 { color: #ed5e44; }
-li.q4-5 { color: #ef4123; }
-
-				
+li.q0-5 { color: #C1B0D5; }
+li.q1-5 { color: #B09AC9; }
+li.q2-5 { color: #9F84BD; }
+li.q3-5 { color: #836D9B; }
+li.q4-5 { color: #665479; }			
