@@ -1,45 +1,28 @@
- <!DOCTYPE HTML>
-
-
-<style>
-
-  svg {
-    font: 10px sans-serif;
-  }
-
-  a:hover tspan:first-child {
-    text-decoration: underline;
-  }
-
-  tspan:last-child {
-    font-size: 9px;
-    fill-opacity: 0.7;
-  }
-
-</style>
-
+<!DOCTYPE HTML>
 
 <html>
 	<head>
-		<title>Global Spatial Data</title>
+		<title>Global Temporal Data</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="styles/styles.css" />
-		<link rel="stylesheet" type="text/css" href="styles/worldmapstyle.css">
 	</head>
 	<body class="subpage">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
+
+					
+
 					<a href="index.html" class="logo">Maps, Measles, and Media</a>
+
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="USmap.html">US Spatial</a>
-						<a href="UStemp.html">US Temporal</a>
+						<a href="ustemp/UStemp.html">US Temporal</a>
 						<a href="worldmap.html">Global Spatial</a>
 						<a href="worldtemp.html">Global Temporal</a>
-						<a href="aboutus.html">About</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -49,22 +32,21 @@
 			<section id="three" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h2>Measles Outbreaks in 2019</h2>
-						<p>Sum of 2019 outbreaks, by country and continent </p>
+						<h2>Global Measles Outbreaks</h2>
+						<p>WHO Data from 2011 - 2019 </p>
 					</header>
-					<p>Year 2019 had a total of 429,650 outbreaks of measles, distributed around the world as the map shows.</p>
+					<p>This page will contain a line chart of countries and their annual amounts of measles cases from 2011 - 2019. To see the preliminary data, please see <a href=https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/measles_monthlydata/en>this data</a></p> 
+
+					<iframe title="The Global Burden of Measles from 2011 - 2019" aria-label="Table" id="datawrapper-chart-9Iqfz" src="//datawrapper.dwcdn.net/9Iqfz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="631"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
 					
+					<script type="text/javascript" src="styles/twitter.js">
+						<a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a>
+						
+					</script>
 
-					<svg width="960" height="500"></svg>
-					<script src="https://d3js.org/d3.v4.min.js"></script>
-
-					<script src="scripts/worldmapscript.js"></script>
-
-
-
-<!--Commented the second section so it just shows the map in them meantime. I'll add continents in this section afterwards-->
-
-					<!-- <div class="flex flex-2">
+					
+					
+					<!--<div class="flex flex-2">
 						<article>
 							<div class="image fit">
 								<img src="images/pic01.jpg" alt="Pic 01" />
@@ -89,16 +71,16 @@
 								<a href="#" class="button special">More</a>
 							</footer>
 						</article>
-					</div> -->
+					</div>
 				</div>
-			</section>
+			</section> -->
 
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<div class="flex">
 						<div class="copyright">
-							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+							&copy; Maps, Measles, and Media. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
 						</div>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
@@ -116,6 +98,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="../scripts/twitter.js"></script>
 
 	</body>
 </html>
