@@ -291,6 +291,7 @@ var mappedData = function mappedValues(key) {
 }
 
 //changed to threshold scale from original quantile scale//
+//such that upper two sections represent vaccine exemptions rate above 5%, i.e. no herd immunity
 console.log(mappedData(stateKey))
 console.log(dataKey)
 var currScale = d3.scale.threshold()
@@ -324,6 +325,7 @@ state.append("text")
     .attr("dy", ".35em")
     .text(function(d) { return d.name; });
   
+//select #legend-container to ensure legend is in right place//
 var legend = d3.select("#legend-container")
     .attr("id", "legend")
     .append('ul')
@@ -332,6 +334,7 @@ var legend = d3.select("#legend-container")
 var keys = legend.selectAll('li.key')
     .data(currScale.range());
 
+//keys/ threshold values for legend are determined//
 keys.enter().append('li')
     .attr('class', function(d) { return'key ' + d; })
     .style('border-top-color', String)
