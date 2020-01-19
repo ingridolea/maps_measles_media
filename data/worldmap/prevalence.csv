@@ -1,0 +1,202 @@
+size,path
+,d3
+,d3/AFR
+,d3/AMR
+,d3/EMR
+,d3/EUR
+,d3/SEAR
+,d3/WPR
+0,d3/AFR/Botswana
+0,d3/AFR/Burundi
+0,d3/AFR/Cabo Verde
+0,d3/AFR/Eritrea
+0,d3/AFR/Eswatini
+0,d3/AFR/Gambia
+0,d3/AFR/Guinea-Bissau
+0,d3/AFR/Lesotho
+0,d3/AFR/Malawi
+0,d3/AFR/Mauritius
+0,d3/AFR/Namibia
+0,d3/AFR/Rwanda
+0,d3/AFR/Sao Tome and Principe
+0,d3/AFR/Seychelles
+0,d3/AFR/South Africa
+0,d3/AFR/Zambia
+0,d3/AFR/Zimbabwe
+0,d3/AMR/Antigua and Barbuda
+0,d3/AMR/Argentina
+0,d3/AMR/Bahamas
+0,d3/AMR/Barbados
+0,d3/AMR/Belize
+0,d3/AMR/Bolivia (Plurinational State of)
+0,d3/AMR/Canada
+0,d3/AMR/Chile
+0,d3/AMR/Colombia
+0,d3/AMR/Costa Rica
+0,d3/AMR/Cuba
+0,d3/AMR/Dominica
+0,d3/AMR/Dominican Republic
+0,d3/AMR/Ecuador
+0,d3/AMR/El Salvador
+0,d3/AMR/Grenada
+0,d3/AMR/Guatemala
+0,d3/AMR/Guyana
+0,d3/AMR/Haiti
+0,d3/AMR/Honduras
+0,d3/AMR/Jamaica
+0,d3/AMR/Mexico
+0,d3/AMR/Nicaragua
+0,d3/AMR/Panama
+0,d3/AMR/Paraguay
+0,d3/AMR/Peru
+0,d3/AMR/Saint Kitts and Nevis
+0,d3/AMR/Saint Lucia
+0,d3/AMR/Saint Vincent and the Grenadines
+0,d3/AMR/Suriname
+0,d3/AMR/Trinidad and Tobago
+0,d3/AMR/United States of America
+0,d3/AMR/Uruguay
+0,d3/EMR/Afghanistan
+0,d3/EMR/Bahrain
+0,d3/EMR/Djibouti
+0,d3/EMR/Egypt
+0,d3/EMR/Iran (Islamic Republic of)
+0,d3/EMR/Jordan
+0,d3/EMR/Kuwait
+0,d3/EMR/Morocco
+0,d3/EMR/Oman
+0,d3/EMR/Pakistan
+0,d3/EMR/Qatar
+0,d3/EMR/Syrian Arab Republic
+0,d3/EUR/Andorra
+0,d3/EUR/Armenia
+0,d3/EUR/Cyprus
+0,d3/EUR/Denmark
+0,d3/EUR/Finland
+0,d3/EUR/Germany
+0,d3/EUR/Greece
+0,d3/EUR/Hungary
+0,d3/EUR/Latvia
+0,d3/EUR/Monaco
+0,d3/EUR/Montenegro
+0,d3/EUR/Netherlands
+0,d3/EUR/Norway
+0,d3/EUR/Portugal
+0,d3/EUR/Serbia
+0,d3/EUR/Spain
+0,d3/EUR/Sweden
+0,d3/EUR/Tajikistan
+0,d3/EUR/Turkmenistan
+0,d3/SEAR/Bhutan
+0,d3/SEAR/Dem. People's Republic of Korea
+0,d3/SEAR/India
+0,d3/SEAR/Indonesia
+0,d3/SEAR/Maldives
+0,d3/SEAR/Sri Lanka
+0,d3/WPR/Brunei Darussalam
+0,d3/WPR/China
+0,d3/WPR/Cook Islands
+0,d3/WPR/Fiji
+0,d3/WPR/Japan
+0,d3/WPR/Kiribati
+0,d3/WPR/Marshall Islands
+0,d3/WPR/Micronesia (Fed. States of)
+0,d3/WPR/Mongolia
+0,d3/WPR/Nauru
+0,d3/WPR/Niue
+0,d3/WPR/Palau
+0,d3/WPR/Papua New Guinea
+0,d3/WPR/Republic of Korea
+0,d3/WPR/Solomon Islands
+0,d3/WPR/Tuvalu
+0,d3/WPR/Vanuatu
+1,d3/AFR/Côte d'Ivoire
+1,d3/AFR/Kenya
+1,d3/AFR/Senegal
+1,d3/AFR/Sierra Leone
+1,d3/AFR/Togo
+1,d3/AFR/United Republic of Tanzania
+1,d3/AMR/Venezuela (Bolivarian Republic of)
+1,d3/EMR/Somalia
+1,d3/EMR/United Arab Emirates
+1,d3/EUR/Austria
+1,d3/EUR/Croatia
+1,d3/EUR/Estonia
+1,d3/EUR/Ireland
+1,d3/EUR/Slovenia
+1,d3/EUR/United Kingdom
+1,d3/SEAR/Nepal
+1,d3/WPR/Australia
+11,d3/AFR/Cameroon
+11,d3/AFR/Chad
+11,d3/AFR/Niger
+11,d3/EMR/Tunisia
+11,d3/EUR/Israel
+129,d3/EUR/Ukraine
+13,d3/AFR/Nigeria
+13,d3/AFR/South Sudan
+15,d3/AFR/Democratic Republic of the Congo
+15,d3/EMR/Lebanon
+16,d3/EUR/Albania
+17,d3/EUR/Bulgaria
+2,d3/AFR/Congo
+2,d3/AFR/Ethiopia
+2,d3/AFR/Uganda
+2,d3/EMR/Libya
+2,d3/EMR/Saudi Arabia
+2,d3/EUR/Azerbaijan
+2,d3/EUR/Belarus
+2,d3/EUR/Iceland
+2,d3/EUR/Italy
+2,d3/EUR/Republic of Moldova
+2,d3/EUR/Russian Federation
+2,d3/EUR/Switzerland
+2,d3/SEAR/Bangladesh
+2,d3/SEAR/Timor-Leste
+2,d3/WPR/Singapore
+21,d3/AFR/Liberia
+23,d3/WPR/Samoa
+28,d3/EMR/Yemen
+3,d3/AFR/Burkina Faso
+3,d3/AFR/Equatorial Guinea
+3,d3/AFR/Gabon
+3,d3/AFR/Mauritania
+3,d3/AFR/Mozambique
+3,d3/EMR/Iraq
+3,d3/EUR/Luxembourg
+3,d3/EUR/Poland
+3,d3/EUR/Turkey
+3,d3/WPR/Cambodia
+3,d3/WPR/Malaysia
+30,d3/EUR/Lithuania
+32,d3/EUR/San Marino
+32,d3/WPR/Tonga
+35,d3/EUR/Kyrgyzstan
+4,d3/AFR/Benin
+4,d3/AFR/Ghana
+4,d3/AFR/Mali
+4,d3/EUR/Belgium
+4,d3/EUR/France
+42,d3/EUR/Bosnia and Herzegovina
+44,d3/WPR/Philippines
+45,d3/WPR/New Zealand
+473,d3/AFR/Madagascar
+5,d3/EUR/Czech Republic
+5,d3/EUR/Slovakia
+5,d3/EUR/Uzbekistan
+6,d3/AFR/Algeria
+6,d3/AFR/Comoros
+66,d3/EUR/Kazakhstan
+7,d3/EUR/Malta
+7,d3/SEAR/Thailand
+8,d3/AFR/Central African Republic
+8,d3/AFR/Guinea
+8,d3/AMR/Brazil
+8,d3/EMR/Sudan
+8,d3/EUR/Romania
+8,d3/WPR/Viet Nam
+9,d3/AFR/Angola
+9,d3/SEAR/Myanmar
+9,d3/WPR/Lao People's Democratic Republic
+90,d3/EUR/North Macedonia
+97,d3/EUR/Georgia

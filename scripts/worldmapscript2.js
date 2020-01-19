@@ -44,7 +44,7 @@ var version = {
   "d3-zoom": "1.1.0"
 };
 
-d3.csv("data/worldmap/d3.csv", function(d) {
+d3.csv("data/worldmap/prevalence.csv", function(d) {
   d.size = +d.size;
   return d;
 }, function(error, data) {
