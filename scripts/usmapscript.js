@@ -1,4 +1,3 @@
-
 var states = [],
     //
     // EDIT!
@@ -293,7 +292,7 @@ var mappedData = function mappedValues(key) {
 console.log(mappedData(stateKey))
 console.log(dataKey)
 var currScale = d3.scale.threshold()
-      .domain([0, 1.7, 3.4, 5.1, 6.8])
+      .domain([1.7, 3.4, 5.1, 6.8])
       .range(d3.range(5).map(function(i) { return "q" + i + "-5"; }));
 	
 var state = svg.append("g")
@@ -335,7 +334,10 @@ keys.enter().append('li')
     .attr('class', function(d) { return'key ' + d; })
     .style('border-top-color', String)
     .text(function(d) {
-  			var format = d3.format('.1%');
+  		var format = d3.format('.1%');
         var r = currScale.invertExtent(d);
+        if(r[0]===undefined){
+        	return format(0)
+        }
         return format(r[0]/100);
     });
