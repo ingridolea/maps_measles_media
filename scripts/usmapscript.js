@@ -293,7 +293,7 @@
 					console.log(mappedData(stateKey))
 					console.log(dataKey)
 					var currScale = d3.scale.quantize()
-					      .domain([1,7.7])
+					      .domain([0.1,7.7])
 					      .range(d3.range(5).map(function(i) { return "q" + i + "-5"; }));
 
 					var state = svg.append("g")
