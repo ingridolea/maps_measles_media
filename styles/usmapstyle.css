@@ -17,6 +17,7 @@ external style sheet applying only to USmap viz
 	fill: white;
 }
 
+/*changed colors to ensure they match overall color scheme for web page*/
 .q0-5 rect { fill: #C1B0D5; }
 .q1-5 rect { fill: #B09AC9; }
 .q2-5 rect { fill: #9F84BD; }
@@ -46,6 +47,7 @@ li.key {
 	padding-right: 0;
 }
 
+/*changed colors to ensure they match color scheme for overall webpage*/
 li.q0-5 { color: #C1B0D5; }
 li.q1-5 { color: #B09AC9; }
 li.q2-5 { color: #9F84BD; }
