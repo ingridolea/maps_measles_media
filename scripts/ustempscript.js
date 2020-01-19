@@ -23,21 +23,21 @@
     let title = svg.append('text')
      .attr('class', 'title')
      .attr('y', 24)
-     .html('18 years of Interbrand’s Top Global Brands');
+     .html('Measles Outbreaks in 2019');
   
     let subTitle = svg.append("text")
      .attr("class", "subTitle")
      .attr("y", 55)
-     .html("Brand value, $m");
+     .html("Number of cases");
    
     let caption = svg.append('text')
      .attr('class', 'caption')
      .attr('x', width)
      .attr('y', height-5)
      .style('text-anchor', 'end')
-     .html('Source: Interbrand');
+     .html('');
 
-     let year = 2000;
+     let year = 3;
     
   d3.csv('../data/ustemp/temporalmeasles.csv').then(function(data) {
     //if (error) throw error;
@@ -49,7 +49,7 @@
         d.lastValue = +d.lastValue,
         d.value = isNaN(d.value) ? 0 : d.value,
         d.year = +d.year,
-        d.colour = d3.hsl(Math.random()*360,0.75,0.75)
+        d.colour = d3.hsl(90,0.47,0.73)
       });
 
      console.log(data);
@@ -178,7 +178,7 @@
         .enter()
         .append('text')
         .attr('class', 'label')
-        .attr('x', d => x(d.value)-8)
+        .attr('x', d => 870)
         .attr('y', d => y(top_n+1)+5+((y(1)-y(0))/2))
         .style('text-anchor', 'end')
         .html(d => d.name)    
@@ -192,7 +192,7 @@
           .transition()
           .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('x', d => x(d.value)-8)
+            .attr('x', d => 870) //old code was x(d.value)+110)
             .attr('y', d => y(d.rank)+5+((y(1)-y(0))/2)+1);
      
        labels
@@ -200,7 +200,7 @@
           .transition()
             .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('x', d => x(d.value)-8)
+            .attr('x', d => 870)
             .attr('y', d => y(top_n+1)+5)
             .remove();
          
@@ -212,7 +212,7 @@
           .enter()
           .append('text')
           .attr('class', 'valueLabel')
-          .attr('x', d => x(d.value)+5)
+          .attr('x', d => 900)
           .attr('y', d => y(top_n+1)+5)
           .text(d => d3.format(',.0f')(d.lastValue))
           .transition()
@@ -224,7 +224,7 @@
           .transition()
             .duration(tickDuration)
             .ease(d3.easeLinear)
-            .attr('x', d => x(d.value)+5)
+            .attr('x', d => 900)
             .attr('y', d => y(d.rank)+5+((y(1)-y(0))/2)+1)
             .tween("text", function(d) {
                let i = d3.interpolateRound(d.lastValue, d.value);
@@ -239,14 +239,14 @@
         .transition()
           .duration(tickDuration)
           .ease(d3.easeLinear)
-          .attr('x', d => x(d.value)+5)
+          .attr('x', d => 900)
           .attr('y', d => y(top_n+1)+5)
           .remove();
     
       yearText.html(~~year);
      
-     if(year == 2018) ticker.stop();
-     year = d3.format('.1f')((+year) + 0.1);
+     if(year == 21) ticker.stop();
+     year = d3.format('.1f')((+year) + 1);
    },tickDuration);
 
  });
