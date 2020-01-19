@@ -1,14 +1,11 @@
+//Creating an empty list for the states//
 var states = [],
-    //
-    // EDIT!
-    //
     dataKey = 'exemption rate',
-    //
-    // DON'T EDIT!
-    //
     stateKey = 'state abbreviation',
     rowsArr = [
     {
+    	//list of dictionnaries//
+    	//dictionnary was copied and pasted from separate file, following data transformation
         "state": "Alabama",
         "state abbreviation": "AL",
         "exemption rate": "0.8"
@@ -260,6 +257,7 @@ var states = [],
     }
 ]
 
+//latches on to grid structure set out in USmap.html//
 d3.select("#grid").text().split("\n").forEach(function(line, i) {
   var re = /\w+/g, m;
   while (m = re.exec(line)) {
@@ -272,6 +270,7 @@ d3.select("#grid").text().split("\n").forEach(function(line, i) {
   }
 });
 
+//viz is generated//
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
@@ -280,6 +279,7 @@ var gridWidth = d3.max(states, function(d) { return d.x; }) + 1,
     gridHeight = d3.max(states, function(d) { return d.y; }) + 1,
     cellSize = 40;
 
+//inserts state abbreviations into grid structure//
 var nestedData = d3.nest()
     .key(function(d) { return d.stateAbbrev; })
     .entries(rowsArr);
@@ -289,6 +289,8 @@ var mappedData = function mappedValues(key) {
     return stateObj[dataKey]
   })
 }
+
+//changed to threshold scale from original quantile scale//
 console.log(mappedData(stateKey))
 console.log(dataKey)
 var currScale = d3.scale.threshold()
@@ -337,7 +339,7 @@ keys.enter().append('li')
   		var format = d3.format('.1%');
         var r = currScale.invertExtent(d);
         if(r[0]===undefined){
-        	return format(0)
+        	return format(0.001)
         }
         return format(r[0]/100);
     });
