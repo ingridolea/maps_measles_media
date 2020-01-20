@@ -1,11 +1,8 @@
-//Creating an empty list for the states//
-var states = [],
-    dataKey = 'exemption rate',
-    stateKey = 'state abbreviation',
-    rowsArr = [
+var dataKey1 = 'exemption rate',
+    rowsArr1 = [
     {
-    	//list of dictionnaries//
-    	//dictionnary was copied and pasted from separate file, following data transformation
+        //list of dictionnaries//
+        //dictionnary was copied and pasted from separate file, following data transformation
         "state": "Alabama",
         "state abbreviation": "AL",
         "exemption rate": "0.8"
@@ -257,6 +254,11 @@ var states = [],
     }
 ]
 
+function drawMap(dataKey,rowsArr,svgSelector,legendSelector,thresholdList){
+//Creating an empty list for the states//
+var states = [],
+    stateKey = 'state abbreviation' 
+
 //latches on to grid structure set out in USmap.html//
 d3.select("#grid").text().split("\n").forEach(function(line, i) {
   var re = /\w+/g, m;
@@ -271,7 +273,7 @@ d3.select("#grid").text().split("\n").forEach(function(line, i) {
 });
 
 //viz is generated//
-var svg = d3.select("svg"),
+var svg = d3.select(svgSelector),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
@@ -295,8 +297,8 @@ var mappedData = function mappedValues(key) {
 console.log(mappedData(stateKey))
 console.log(dataKey)
 var currScale = d3.scale.threshold()
-      .domain([1.7, 3.4, 5.1, 6.8])
-      .range(d3.range(5).map(function(i) { return "q" + i + "-5"; }));
+      .domain(thresholdList)
+      .range(d3.range(thresholdList.length + 1).map(function(i) { return "q" + i + "-5"; }));
 	
 var state = svg.append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
@@ -326,8 +328,7 @@ state.append("text")
     .text(function(d) { return d.name; });
   
 //select #legend-container to ensure legend is in right place//
-var legend = d3.select("#legend-container")
-    .attr("id", "legend")
+var legend = d3.select(legendSelector)
     .append('ul')
     .attr('class', 'list-inline');
 
@@ -346,3 +347,5 @@ keys.enter().append('li')
         }
         return format(r[0]/100);
     });
+};
+drawMap(dataKey1,rowsArr1,"#map1_svg","#legend_container1",[1.7, 3.4, 5.1, 6.8]);
