@@ -36,12 +36,24 @@
 						<p>The debate and status quo regarding vaccine exemptions</p>
 					</header>
 
-					<p>US state laws require children to have certain vaccines as a prerequisite for entry into daycare and kindergarden. All 50 state allow for medical exemptions from this requirement. Studies have shown that vaccine exemptions tend to cluster geographically, rendering some cummunities particularly vulnerable to outbreaks (Wang et al). Most states (45 and Washington DC) also grant religious exemptions and 15 states allow philosophical exemptions based on other non-religous personal or moral belief (Source: National Conference of State Legislatures, drawing on LexisNexis StateNet Database and the Immunization Action Coalition, May 2019).</p>
+					<p> Coverage paragraph</p>
+
+					<center>
+					<h3>Measles vaccine coverage across US states</h3>
+					</center>
+					
+					<svg id="map2_svg" width="960" height="350"></svg>
+					<div id="legend_container2"></div>
+					<p><i> Showing the estimated percentage of kindergardeners enrolled during 2018-2019 who had received the MMR vaccine based on data from the.<i><a href="https://www.cdc.gov/vaccines/imz-managers/coverage/schoolvaxview/data-reports/coverage-dashboard/2018-19.html"> Centers for Disease Control and Prevention.</a><i>&nbsp No data available for Washington DC, New Jersey and Alaska.</i>	
 
 					<center>
 					<h3>Distribution of vaccine exemptions for kindergardeners across US states</h3>
-					
-					<svg width="960" height="350"></svg>
+					</center>
+					<p>US state laws require children to have certain vaccines as a prerequisite for entry into daycare and kindergarden. All 50 state allow for medical exemptions from this requirement. Studies have shown that vaccine exemptions tend to cluster geographically, rendering some cummunities particularly vulnerable to outbreaks (Wang et al). Most states (45 and Washington DC) also grant religious exemptions and 15 states allow philosophical exemptions based on other non-religous personal or moral belief (Source: National Conference of State Legislatures, drawing on LexisNexis StateNet Database and the Immunization Action Coalition, May 2019).</p>
+
+
+					<svg id="map1_svg" width="960" height="350"></svg>
+					<div id="legend_container1"></div>
 
 		<!--Shape below determines shape of grid map and position of squares; rearranged to original shape to reproduce grid map used by New York Times-->
 					<script id="grid" type="text/plain">
@@ -54,13 +66,11 @@
 					         TX LA MS AL GA SC
 					   HI                FL
 					</script>
-					</center>
-					<!--Added div and id to move legend closer to grid map-->
-					<div id="legend-container"></div>
 
 		<!--Continue section  copy-->
-					<p><i> Showing the estimated percentage of kindergardeners with an exemption for any vaccine during the 2018-2019 school year based on data from the.<i><a href="https://www.cdc.gov/vaccines/imz-managers/coverage/schoolvaxview/data-reports/exemptions-reports/2018-19.html"> Vaccination Exemptions Reports by the Centers for Disease Control and Prevention.</a><i>&nbsp No data available for Washington DC.</i>	
-					<p><i>Visualization adapted from</i><a href="https://bl.ocks.org/newsroomdev/6451b18829cfb62f708a/d7ccb820e99582d7c650fa53658e1b4acbb8c98d"> CD3 block by Gerald Rich.</a><i>&nbspLearn more about<a href="https://medium.com/@kristw/whose-grid-map-is-better-quality-metrics-for-grid-map-layouts-e3d6075d9e80"> the art of choosing a grid map.</a></p>
+
+					<p><i> Showing the estimated percentage of kindergardeners with an exemption for any vaccine during the 2018-2019 school year based on data from the.</i><a href="https://www.cdc.gov/vaccines/imz-managers/coverage/schoolvaxview/data-reports/exemptions-reports/2018-19.html"> Vaccination Exemptions Reports by the Centers for Disease Control and Prevention.</a><i>&nbsp No data available for Washington DC.</i>	
+					<p><i>Both visualization adapted from</i><a href="https://bl.ocks.org/newsroomdev/6451b18829cfb62f708a/d7ccb820e99582d7c650fa53658e1b4acbb8c98d"> CD3 block by Gerald Rich.</a><i>&nbspLearn more about<i/><a href="https://medium.com/@kristw/whose-grid-map-is-better-quality-metrics-for-grid-map-layouts-e3d6075d9e80"> the art of choosing a grid map.</a></p>
 
 					<h2>Media insight: Who is winning the battle over measiles vaccine exemption?</h2>
 					<p>Several states are considering <a href="https://www.reuters.com/article/us-usa-measles-states-feature/as-measles-returns-u-s-states-look-to-cut-vaccine-exemptions-idUSKCN1S81LS">new laws to curb vaccine exemptions.</a></p>
@@ -97,6 +107,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="scripts/usmapscript.js"></script>
+			<script type="text/javascript" src="scripts/usmap2script.js"></script>
 
 	</body>
 </html>

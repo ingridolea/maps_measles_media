@@ -1,0 +1,50 @@
+states,state abbreviation,vacc_rate
+Alabama,AL,90.6
+Arizona,AZ,92.9
+Arkansas,AR,94.2
+California,CA,96.5
+Colorado,CO,87.4
+Connecticut,CT,95.9
+Delaware,DE,97.8
+Florida,FL,93.8
+Georgia,GA,93.6
+Hawaii,HI,91.5
+Idaho,ID,89.5
+Illinois,IL,94.7
+Indiana,IN,91.2
+Iowa,IA,93.3
+Kansas,KS,90.8
+Kentucky,KY,93.4
+Louisiana,LA,95.5
+Maine,ME,93.8
+Maryland,MD,97.4
+Massachusetts,MA,96.9
+Michigan,MI,94.6
+Minnesota,MN,92.6
+Mississippi,MS,99.2
+Missouri,MO,94.8
+Montana,MT,93.3
+Nebraska,NE,96.9
+Nevada,NV,95.1
+New Hampshire,NH,91.8
+New Jersey,NNJ,95
+New Mexico,NM,96.1
+New York,NY,97.2
+North Carolina,NC,93.2
+North Dakota,ND,93.6
+Ohio,OH,91.6
+Oklahoma,OK,92.2
+Oregon,OR,93
+Pennsylvania,PA,96.4
+Rhode Island,RI,97.4
+South Carolina,SC,94.2
+South Dakota,SD,96.2
+Tennessee,TN,96.5
+Texas,TX,96.9
+Utah,UT,92.8
+Vermont,VT,93
+Virginia,VA,95
+Washington,WA,90.8
+West Virginia,WV,98.8
+Wisconsin,WI,92.6
+Wyoming,WY,95.1
