@@ -63,7 +63,7 @@ d3.csv("data/worldmap/prevalence.csv", function(d) {
     .data(root.leaves())
     .enter().append("a")
       .attr("target", "_blank")
-      .attr("xlink:href", function(d) { var p = d.data.path.split("/"); return "#" })
+      .attr("xlink", function(d) { var p = d.data.path.split("/"); return "#" })
       .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; });
 
   cell.append("rect")
