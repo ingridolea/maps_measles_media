@@ -1,24 +1,5 @@
  <!DOCTYPE HTML>
 
-
-<style>
-
-  svg {
-    font: 10px sans-serif;
-  }
-
-  a:hover tspan:first-child {
-    text-decoration: underline;
-  }
-
-  tspan:last-child {
-    font-size: 9px;
-    fill-opacity: 0.7;
-  }
-
-</style>
-
-
 <html>
 	<head>
 		<title>Global Spatial Data</title>
@@ -48,37 +29,61 @@
 		<!-- Three -->
 			<section id="three" class="wrapper">
 				<div class="inner">
+					
 					<header class="align-center">
-						<h2>Measles Outbreaks in 2019</h2>
+						<h2>Measles in the world in 2019</h2>
+					</header>
+
+
+					<header class="align-center">
+						<h3>Measles outbreaks </h3>
 						<p>Sum of measles cases in 2019, by country and continent </p>
 					</header>
-					<p>In 2019 there were a total of 429,650 reported cases of measles worldwide. This visualization illustrates the global distribution of these cases. Country blocks are organized by continent and if you hover your mouse above one country you will see the total number of cases reported in that country from January 1 - December 31, 2019. </p>
+					
+					<p>In 2019 there were a total of 429,650 reported cases of measles worldwide. This visualization illustrates the global distribution of these cases. Country blocks are organized by continent and each country includes  the total number of cases reported in that country from January 1 - December 31, 2019. </p>
 					
 
-					<svg width="960" height="500"></svg>
-					<script src="https://d3js.org/d3.v4.min.js"></script>
+					<svg id="first" width="960" height="500"></svg>
 
-					<script src="scripts/worldmapscript.js"></script>
-					<p><i>Note that LIABVIABVISBVIUSBVISUD about this data. The variables used were because of AUIFBVSIDOVBSIDVNSIDNV.</i><a href=""> Source</a></p>
+					<p><i>Cases of measles from <a href="https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/measles_monthlydata/en/"> WHO</a>, get the data <a href="worldmap/d3.csv"> here</a>. Visualization adapted from <a href="https://bl.ocks.org/mbostock/8fe6fa6ed1fa976e5dd76cfa4d816fec"> D3 Source Treemap by Mike Bostock</a> </i> <br><br></p>
+
+					<header class="align-center">
+						<h3>Prevalence of measles </h3>
+						<p>Cases by 100,000 people</p>
+					</header>
 
 					<p>When considering the number of measles cases per country, it is important to consider the population of that country. The following visualization illustrates the number of measles cases per 100,000 people for the same countries in 2019.</p>
 
-					<script></script>
-						<a class="twitter-share-button" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsclazenby.github.io%2Fmaps_measles_media%2Fworldmap.html&text=Check%20out%20this%20data%20on%20measles%21&hashtags=Code4Policy2020" data-size="large"> Tweet<link rel="canonical" href="/web/tweet-button"></a>
+
+					<svg id="second" width="960" height="500"></svg>
+
+					<p><i>Prevalence calculated with Measles case data from <a href="https://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/active/measles_monthlydata/en/"> WHO</a>, and world population from <a href="https://population.un.org/wpp/DataQuery/">United Nations</a>. Get the data <a href="worldmap/prevalence.csv">here</a>.  Visualization adapted from <a href="https://bl.ocks.org/mbostock/8fe6fa6ed1fa976e5dd76cfa4d816fec"> D3 Source Treemap by Mike Bostock</a> </i></p>
+								
+					<a class="twitter-share-button" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsclazenby.github.io%2Fmaps_measles_media%2Fworldmap.html&text=Check%20out%20this%20data%20on%20measles%21&hashtags=Code4Policy2020" data-size="large"> Tweet<link rel="canonical" href="/web/tweet-button"></a>
+
+			
 
 
 
 <!--Commented the second section so it just shows the map in them meantime. I'll add continents in this section afterwards-->
 
-					<!-- <div class="flex flex-2">
+<!-- 					<div class="flex flex-2">
 						<article>
+							
+
+
+
 							<div class="image fit">
 								<img src="images/pic01.jpg" alt="Pic 01" />
 							</div>
 							<header>
 								<h3>Praesent placerat magna</h3>
 							</header>
+	
+
+
 							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
+							
 							<footer>
 								<a href="#" class="button special">More</a>
 							</footer>
@@ -96,6 +101,8 @@
 							</footer>
 						</article>
 					</div> -->
+
+
 				</div>
 			</section>
 
@@ -119,6 +126,10 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://d3js.org/d3.v4.min.js"></script>
+			<script src="scripts/worldmapscript.js"></script>
+			<script src="scripts/worldmapscript2.js"></script>
+			<script src="scripts/worldmapscript3.js"></script>
 
 	</body>
 </html>

@@ -1,6 +1,6 @@
-var svg = d3.select("#first"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
+var svg2 = d3.select("#second"),
+    width = +svg2.attr("width"),
+    height = +svg2.attr("height");
 
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -44,7 +44,7 @@ var version = {
   "d3-zoom": "1.1.0"
 };
 
-d3.csv("data/worldmap/d3.csv", function(d) {
+d3.csv("data/worldmap/prevalence.csv", function(d) {
   d.size = +d.size;
   return d;
 }, function(error, data) {
@@ -59,7 +59,7 @@ d3.csv("data/worldmap/d3.csv", function(d) {
 
   treemap(root);
 
-  var cell = svg.selectAll("a")
+  var cell = svg2.selectAll("a")
     .data(root.leaves())
     .enter().append("a")
       .attr("target", "_blank")
