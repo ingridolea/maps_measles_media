@@ -32,18 +32,18 @@ external style sheet applying only to USmap viz
 #legend_container1 .q4-5 { color: #665479; }	
 
 /*changed colors to ensure they match overall color scheme for web page*/
-#map2_svg .q0-5 rect { fill: #665479; }
-#map2_svg .q1-5 rect { fill: #836D9B; }
-#map2_svg .q2-5 rect { fill: #9F84BD; }
-#map2_svg .q3-5 rect { fill: #B09AC9; }
-#map2_svg .q4-5 rect { fill: #C1B0D5; }
+#map2_svg .q0-5 rect { fill: #C7E1AD; }
+#map2_svg .q1-5 rect { fill: #BBDB9B; }
+#map2_svg .q2-5 rect { fill: #9AB47F; }
+#map2_svg .q3-5 rect { fill: #778C63; }
+#map2_svg .q4-5 rect { fill: #556447; }
 
 /*changed colors to ensure they match color scheme for overall webpage*/
-#legend_container2 .q0-5 { color: #665479; }
-#legend_container2 .q1-5 { color: #836D9B; }
-#legend_container2 .q2-5 { color: #9F84BD; }
-#legend_container2 .q3-5 { color: #B09AC9; }
-#legend_container2 .q4-5 { color: #C1B0D5; }	
+#legend_container2 .q0-5 { color: #C7E1AD; }
+#legend_container2 .q1-5 { color: #BBDB9B; }
+#legend_container2 .q2-5 { color: #9AB47F; }
+#legend_container2 .q3-5 { color: #778C63; }
+#legend_container2 .q4-5 { color: #556447; }	
 
 #legend {
 	padding: 1.5em 0 0 1.5em;
