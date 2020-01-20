@@ -28,7 +28,7 @@
 
 .chart-wrapper p {
     font-size: 16px;
-    margin-top: 5px;
+    margin-top:5px;
     margin-bottom: 40px;
 }
 
@@ -46,7 +46,7 @@
 
 .chart-wrapper .line {
   fill: none;
-  stroke: #5385C1;
+  stroke: steelblue;
   stroke-width: 5px;
 }
 
