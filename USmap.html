@@ -40,8 +40,13 @@
 
 					<center>
 					<h3>Distribution of vaccine exemptions for kindergardeners across US states</h3>
+					</center>
 					
-					<svg width="960" height="350"></svg>
+					<svg id="map1_svg" width="960" height="350"></svg>
+					<div id="legend_container1"></div>
+					
+					<svg id="map2_svg" width="960" height="350"></svg>
+					<div id="legend_container2"></div>
 
 		<!--Shape below determines shape of grid map and position of squares; rearranged to original shape to reproduce grid map used by New York Times-->
 					<script id="grid" type="text/plain">
@@ -54,9 +59,6 @@
 					         TX LA MS AL GA SC
 					   HI                FL
 					</script>
-					</center>
-					<!--Added div and id to move legend closer to grid map-->
-					<div id="legend-container"></div>
 
 		<!--Continue section  copy-->
 					<p><i> Showing the estimated percentage of kindergardeners with an exemption for any vaccine during the 2018-2019 school year based on data from the.<i><a href="https://www.cdc.gov/vaccines/imz-managers/coverage/schoolvaxview/data-reports/exemptions-reports/2018-19.html"> Vaccination Exemptions Reports by the Centers for Disease Control and Prevention.</a><i>&nbsp No data available for Washington DC.</i>	
@@ -97,6 +99,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="scripts/usmapscript.js"></script>
+			<script type="text/javascript" src="scripts/usmap2script.js"></script>
 
 	</body>
 </html>
