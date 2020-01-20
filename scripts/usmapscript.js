@@ -335,15 +335,17 @@ var legend = d3.select(legendSelector)
 var keys = legend.selectAll('li.key')
     .data(currScale.range());
 
-//keys/ threshold values for legend are determined//
 keys.enter().append('li')
     .attr('class', function(d) { return'key ' + d; })
     .style('border-top-color', String)
     .text(function(d) {
   		var format = d3.format('.1%');
         var r = currScale.invertExtent(d);
-        if(r[0]===undefined){
+        if(r[0]===undefined && svgSelector==="#map1_svg"){
         	return format(0.001)
+        }
+        if(r[0]===undefined && svgSelector==="#map2_svg"){
+            return format(0.87)
         }
         return format(r[0]/100);
     });
