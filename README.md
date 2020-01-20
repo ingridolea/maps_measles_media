@@ -1,4 +1,4 @@
-<title>Measles, Maps and Media</title>
+###Measles, Maps and Media###
 
 Measles, Maps and Media is an project made as part of the January "Data and Programming for Policy Makers" course at the Harvard Kennedy School. The course took place over two weeks in January 2020, and the entire site, its visualizations, and its background research were completed in this time period. The course was run according to agile methodology and included overviews of web development, command line, github, and data visualization using python and open source code.
 
