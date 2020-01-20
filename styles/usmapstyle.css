@@ -17,12 +17,33 @@ external style sheet applying only to USmap viz
 	fill: white;
 }
 
-.q0-5 rect { fill: #C1B0D5; }
-.q1-5 rect { fill: #B09AC9; }
-.q2-5 rect { fill: #9F84BD; }
-.q3-5 rect { fill: #836D9B; }
-.q4-5 rect { fill: #665479; }
+/*changed colors to ensure they match overall color scheme for web page*/
+#map1_svg .q0-5 rect { fill: #C1B0D5; }
+#map1_svg .q1-5 rect { fill: #B09AC9; }
+#map1_svg .q2-5 rect { fill: #9F84BD; }
+#map1_svg .q3-5 rect { fill: #836D9B; }
+#map1_svg .q4-5 rect { fill: #665479; }
 
+/*changed colors to ensure they match color scheme for overall webpage*/
+#legend_container1 .q0-5 { color: #C1B0D5; }
+#legend_container1 .q1-5 { color: #B09AC9; }
+#legend_container1 .q2-5 { color: #9F84BD; }
+#legend_container1 .q3-5 { color: #836D9B; }
+#legend_container1 .q4-5 { color: #665479; }	
+
+/*changed colors to ensure they match overall color scheme for web page*/
+#map2_svg .q0-5 rect { fill: #C7E1AD; }
+#map2_svg .q1-5 rect { fill: #BBDB9B; }
+#map2_svg .q2-5 rect { fill: #9AB47F; }
+#map2_svg .q3-5 rect { fill: #778C63; }
+#map2_svg .q4-5 rect { fill: #556447; }
+
+/*changed colors to ensure they match color scheme for overall webpage*/
+#legend_container2 .q0-5 { color: #C7E1AD; }
+#legend_container2 .q1-5 { color: #BBDB9B; }
+#legend_container2 .q2-5 { color: #9AB47F; }
+#legend_container2 .q3-5 { color: #778C63; }
+#legend_container2 .q4-5 { color: #556447; }	
 
 #legend {
 	padding: 1.5em 0 0 1.5em;
@@ -46,8 +67,4 @@ li.key {
 	padding-right: 0;
 }
 
-li.q0-5 { color: #C1B0D5; }
-li.q1-5 { color: #B09AC9; }
-li.q2-5 { color: #9F84BD; }
-li.q3-5 { color: #836D9B; }
-li.q4-5 { color: #665479; }			
+		
