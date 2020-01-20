@@ -19,16 +19,11 @@
     };
   
     let barPadding = (height-(margin.bottom+margin.top))/(top_n*5);
-      
-    let title = svg.append('text')
-     .attr('class', 'title')
-     .attr('y', 24)
-     .html('Measles Outbreaks in 2019');
   
     let subTitle = svg.append("text")
      .attr("class", "subTitle")
      .attr("y", 55)
-     .html("Number of cases");
+     .html("Number of measles cases in 2019");
    
     let caption = svg.append('text')
      .attr('class', 'caption')
