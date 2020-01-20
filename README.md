@@ -6,6 +6,7 @@ The sources for the data and the code for the visualizations, from <a href="http
 
 To run this site locally, run the following commands on terminal: 
 <ul><code>git clone git@github.com:sclazenby/maps_measles_media.git</code></ul>
+<ul><code>cd maps_measles_media</code></ul>
 <ul><code>python3 -m http.server</code></ul>
 
 
