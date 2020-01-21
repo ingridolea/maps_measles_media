@@ -3,7 +3,7 @@ Explanation of data and data transformation for USmap visualizations
 Grid map in purple on bottom of page 
 The original data source was the "2018-2019 School Year Vaccination Exemptions Report" provided by SchoolVaxView, a service by the Centers for Disease Control and Prevention which publishes data, information and news about US school vaccination coverage based on reports received from individual states. 
 
-The data can be found at https://www.cdc.gov/vaccines/imz-managers/coverage/schoolvaxview/data-reports/exemptions-reports/2018-19.html (under the "Download Report Data") and as all_exemptions_original.xls in this folder.  
+The data can be found at https://www.cdc.gov/vaccines/imz-managers/coverage/schoolvaxview/data-reports/exemptions-reports/2018-19.html (under the "Download Report Data") and as all_exemptions_original.csv in this folder.  
 
 The data was transformed as follows: 
 1. In excel: Opened xls file and deleted merged header rows (rows 1 and 2) to allow file to be saved as csv more easily. 
