@@ -1,0 +1,1150 @@
+﻿<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>InstantAtlas™ Server</Author>
+  <LastAuthor>Leonie Beyrle</LastAuthor>
+  <Created>2020-01-21T01:57:36Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>5950</WindowHeight>
+  <WindowWidth>19200</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2686248620496">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2686248620516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2686248620536">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2686248620556">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2686248620576">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2686248620596">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="SVV Single Year Map Exemptions ">
+  <Table ss:ExpandedColumnCount="16" ss:ExpandedRowCount="56" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultRowHeight="10.25">
+   <Row>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:MergeAcross="4" ss:StyleID="m2686248620496"><Data ss:Type="String">School Assessment - Medical Exemption</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="m2686248620516"><Data ss:Type="String">School Assessment - Non-medical Exemption</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="m2686248620536"><Data ss:Type="String">School Assessment - Any Exemption</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:MergeAcross="4" ss:StyleID="m2686248620556"><Data ss:Type="String">All kindergartners</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="m2686248620576"><Data ss:Type="String">All kindergartners</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="m2686248620596"><Data ss:Type="String">All kindergartners</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Names</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2018-19</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">FOOTNOTES</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SURVEY TYPE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">NO.</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">TOTAL KPOP</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2018-19</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">FOOTNOTES</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SURVEY TYPE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">NO.</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">TOTAL KPOP</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2018-19</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">FOOTNOTES</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">SURVEY TYPE</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">NO.</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">TOTAL KPOP</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Alabama</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">62</Data></Cell>
+    <Cell><Data ss:Type="String">77739</Data></Cell>
+    <Cell><Data ss:Type="String">0.9</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">667</Data></Cell>
+    <Cell><Data ss:Type="String">77739</Data></Cell>
+    <Cell><Data ss:Type="String">0.8</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">624</Data></Cell>
+    <Cell><Data ss:Type="String">77739</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Alaska</Data></Cell>
+    <Cell><Data ss:Type="String">0.5</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Voluntary response</Data></Cell>
+    <Cell><Data ss:Type="String">51</Data></Cell>
+    <Cell><Data ss:Type="String">10316</Data></Cell>
+    <Cell><Data ss:Type="String">6.6</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Voluntary response</Data></Cell>
+    <Cell><Data ss:Type="String">680</Data></Cell>
+    <Cell><Data ss:Type="String">10316</Data></Cell>
+    <Cell><Data ss:Type="String">7.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Voluntary response</Data></Cell>
+    <Cell><Data ss:Type="String">731</Data></Cell>
+    <Cell><Data ss:Type="String">10316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Arizona</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;. ‡</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">26</Data></Cell>
+    <Cell><Data ss:Type="String">79981</Data></Cell>
+    <Cell><Data ss:Type="String">5.9</Data></Cell>
+    <Cell><Data ss:Type="String">‡</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">4755</Data></Cell>
+    <Cell><Data ss:Type="String">79981</Data></Cell>
+    <Cell><Data ss:Type="String">6.0</Data></Cell>
+    <Cell><Data ss:Type="String">‡</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">4781</Data></Cell>
+    <Cell><Data ss:Type="String">79981</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Arkansas</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">15</Data></Cell>
+    <Cell><Data ss:Type="String">39257</Data></Cell>
+    <Cell><Data ss:Type="String">1.8</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">711</Data></Cell>
+    <Cell><Data ss:Type="String">39257</Data></Cell>
+    <Cell><Data ss:Type="String">1.8</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">726</Data></Cell>
+    <Cell><Data ss:Type="String">39257</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">California</Data></Cell>
+    <Cell><Data ss:Type="String">0.6</Data></Cell>
+    <Cell><Data ss:Type="String">‡.†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3434</Data></Cell>
+    <Cell><Data ss:Type="String">568947</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">‡.†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">568947</Data></Cell>
+    <Cell><Data ss:Type="String">0.6</Data></Cell>
+    <Cell><Data ss:Type="String">‡.†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3434</Data></Cell>
+    <Cell><Data ss:Type="String">568947</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Colorado</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">§</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">115</Data></Cell>
+    <Cell><Data ss:Type="String">64191</Data></Cell>
+    <Cell><Data ss:Type="String">4.7</Data></Cell>
+    <Cell><Data ss:Type="String">§</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3017</Data></Cell>
+    <Cell><Data ss:Type="String">64191</Data></Cell>
+    <Cell><Data ss:Type="String">4.9</Data></Cell>
+    <Cell><Data ss:Type="String">§</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3132</Data></Cell>
+    <Cell><Data ss:Type="String">64191</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Connecticut</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">86</Data></Cell>
+    <Cell><Data ss:Type="String">38230</Data></Cell>
+    <Cell><Data ss:Type="String">2.5</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">941</Data></Cell>
+    <Cell><Data ss:Type="String">38230</Data></Cell>
+    <Cell><Data ss:Type="String">2.7</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1027</Data></Cell>
+    <Cell><Data ss:Type="String">38230</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Delaware</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">28</Data></Cell>
+    <Cell><Data ss:Type="String">10798</Data></Cell>
+    <Cell><Data ss:Type="String">1.0</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">106</Data></Cell>
+    <Cell><Data ss:Type="String">10798</Data></Cell>
+    <Cell><Data ss:Type="String">1.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">133</Data></Cell>
+    <Cell><Data ss:Type="String">10798</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">District of Columbia</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Florida</Data></Cell>
+    <Cell><Data ss:Type="String">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">828</Data></Cell>
+    <Cell><Data ss:Type="String">224641</Data></Cell>
+    <Cell><Data ss:Type="String">2.9</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">6472</Data></Cell>
+    <Cell><Data ss:Type="String">224641</Data></Cell>
+    <Cell><Data ss:Type="String">3.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">7300</Data></Cell>
+    <Cell><Data ss:Type="String">224641</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Georgia</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">124</Data></Cell>
+    <Cell><Data ss:Type="String">131275</Data></Cell>
+    <Cell><Data ss:Type="String">2.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3116</Data></Cell>
+    <Cell><Data ss:Type="String">131275</Data></Cell>
+    <Cell><Data ss:Type="String">2.5</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3240</Data></Cell>
+    <Cell><Data ss:Type="String">131275</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Hawaii</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">10</Data></Cell>
+    <Cell><Data ss:Type="String">16051</Data></Cell>
+    <Cell><Data ss:Type="String">4.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">702</Data></Cell>
+    <Cell><Data ss:Type="String">16051</Data></Cell>
+    <Cell><Data ss:Type="String">4.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">712</Data></Cell>
+    <Cell><Data ss:Type="String">16051</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Idaho</Data></Cell>
+    <Cell><Data ss:Type="String">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">82</Data></Cell>
+    <Cell><Data ss:Type="String">22995</Data></Cell>
+    <Cell><Data ss:Type="String">7.4</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1696</Data></Cell>
+    <Cell><Data ss:Type="String">22995</Data></Cell>
+    <Cell><Data ss:Type="String">7.7</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1778</Data></Cell>
+    <Cell><Data ss:Type="String">22995</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Illinois</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">§. †</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">346</Data></Cell>
+    <Cell><Data ss:Type="String">143876</Data></Cell>
+    <Cell><Data ss:Type="String">1.5</Data></Cell>
+    <Cell><Data ss:Type="String">§. †</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2220</Data></Cell>
+    <Cell><Data ss:Type="String">143876</Data></Cell>
+    <Cell><Data ss:Type="String">1.8</Data></Cell>
+    <Cell><Data ss:Type="String">§. †</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2566</Data></Cell>
+    <Cell><Data ss:Type="String">143876</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Indiana</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">252</Data></Cell>
+    <Cell><Data ss:Type="String">82324</Data></Cell>
+    <Cell><Data ss:Type="String">1.0</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">783</Data></Cell>
+    <Cell><Data ss:Type="String">82324</Data></Cell>
+    <Cell><Data ss:Type="String">1.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1035</Data></Cell>
+    <Cell><Data ss:Type="String">82324</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Iowa</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">87</Data></Cell>
+    <Cell><Data ss:Type="String">40624</Data></Cell>
+    <Cell><Data ss:Type="String">2.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">873</Data></Cell>
+    <Cell><Data ss:Type="String">40624</Data></Cell>
+    <Cell><Data ss:Type="String">2.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">960</Data></Cell>
+    <Cell><Data ss:Type="String">40624</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Kansas</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">122</Data></Cell>
+    <Cell><Data ss:Type="String">37838</Data></Cell>
+    <Cell><Data ss:Type="String">1.8</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">688</Data></Cell>
+    <Cell><Data ss:Type="String">37838</Data></Cell>
+    <Cell><Data ss:Type="String">2.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">810</Data></Cell>
+    <Cell><Data ss:Type="String">37838</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Kentucky</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">140</Data></Cell>
+    <Cell><Data ss:Type="String">55587</Data></Cell>
+    <Cell><Data ss:Type="String">1.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">661</Data></Cell>
+    <Cell><Data ss:Type="String">55587</Data></Cell>
+    <Cell><Data ss:Type="String">1.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">801</Data></Cell>
+    <Cell><Data ss:Type="String">55587</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Louisiana</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">53</Data></Cell>
+    <Cell><Data ss:Type="String">56203</Data></Cell>
+    <Cell><Data ss:Type="String">1.1</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">618</Data></Cell>
+    <Cell><Data ss:Type="String">56203</Data></Cell>
+    <Cell><Data ss:Type="String">1.2</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">671</Data></Cell>
+    <Cell><Data ss:Type="String">56203</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Maine</Data></Cell>
+    <Cell><Data ss:Type="String">0.6</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">79</Data></Cell>
+    <Cell><Data ss:Type="String">13419</Data></Cell>
+    <Cell><Data ss:Type="String">5.6</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">752</Data></Cell>
+    <Cell><Data ss:Type="String">13419</Data></Cell>
+    <Cell><Data ss:Type="String">6.2</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">831</Data></Cell>
+    <Cell><Data ss:Type="String">13419</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Maryland</Data></Cell>
+    <Cell><Data ss:Type="String">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">299</Data></Cell>
+    <Cell><Data ss:Type="String">71431</Data></Cell>
+    <Cell><Data ss:Type="String">1.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">772</Data></Cell>
+    <Cell><Data ss:Type="String">71431</Data></Cell>
+    <Cell><Data ss:Type="String">1.5</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1071</Data></Cell>
+    <Cell><Data ss:Type="String">71431</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Massachusetts</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">171</Data></Cell>
+    <Cell><Data ss:Type="String">65279</Data></Cell>
+    <Cell><Data ss:Type="String">1.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">749</Data></Cell>
+    <Cell><Data ss:Type="String">65279</Data></Cell>
+    <Cell><Data ss:Type="String">1.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">920</Data></Cell>
+    <Cell><Data ss:Type="String">65279</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Michigan</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">296</Data></Cell>
+    <Cell><Data ss:Type="String">118632</Data></Cell>
+    <Cell><Data ss:Type="String">4.3</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">5099</Data></Cell>
+    <Cell><Data ss:Type="String">118632</Data></Cell>
+    <Cell><Data ss:Type="String">4.5</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">5395</Data></Cell>
+    <Cell><Data ss:Type="String">118632</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Minnesota</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">§. ||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">163</Data></Cell>
+    <Cell><Data ss:Type="String">70085</Data></Cell>
+    <Cell><Data ss:Type="String">3.5</Data></Cell>
+    <Cell><Data ss:Type="String">§. ||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2450</Data></Cell>
+    <Cell><Data ss:Type="String">70085</Data></Cell>
+    <Cell><Data ss:Type="String">3.7</Data></Cell>
+    <Cell><Data ss:Type="String">§. ||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2613</Data></Cell>
+    <Cell><Data ss:Type="String">70085</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Mississippi</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">‡.†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">47</Data></Cell>
+    <Cell><Data ss:Type="String">37775</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">‡.†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">37775</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">‡.†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">47</Data></Cell>
+    <Cell><Data ss:Type="String">37775</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Missouri</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">§. †</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">129</Data></Cell>
+    <Cell><Data ss:Type="String">72687</Data></Cell>
+    <Cell><Data ss:Type="String">2.5</Data></Cell>
+    <Cell><Data ss:Type="String">§. †</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1819</Data></Cell>
+    <Cell><Data ss:Type="String">72687</Data></Cell>
+    <Cell><Data ss:Type="String">2.7</Data></Cell>
+    <Cell><Data ss:Type="String">§. †</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1948</Data></Cell>
+    <Cell><Data ss:Type="String">72687</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Montana</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">27</Data></Cell>
+    <Cell><Data ss:Type="String">12480</Data></Cell>
+    <Cell><Data ss:Type="String">4.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">529</Data></Cell>
+    <Cell><Data ss:Type="String">12480</Data></Cell>
+    <Cell><Data ss:Type="String">4.5</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">556</Data></Cell>
+    <Cell><Data ss:Type="String">12480</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Nebraska</Data></Cell>
+    <Cell><Data ss:Type="String">0.5</Data></Cell>
+    <Cell><Data ss:Type="String">†.§§</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">127</Data></Cell>
+    <Cell><Data ss:Type="String">26925</Data></Cell>
+    <Cell><Data ss:Type="String">1.6</Data></Cell>
+    <Cell><Data ss:Type="String">†.§§</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">441</Data></Cell>
+    <Cell><Data ss:Type="String">26925</Data></Cell>
+    <Cell><Data ss:Type="String">2.1</Data></Cell>
+    <Cell><Data ss:Type="String">†.§§</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">568</Data></Cell>
+    <Cell><Data ss:Type="String">26925</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Nevada</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">70</Data></Cell>
+    <Cell><Data ss:Type="String">37971</Data></Cell>
+    <Cell><Data ss:Type="String">3.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">1197</Data></Cell>
+    <Cell><Data ss:Type="String">37971</Data></Cell>
+    <Cell><Data ss:Type="String">3.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">1267</Data></Cell>
+    <Cell><Data ss:Type="String">37971</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">New Hampshire</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">29</Data></Cell>
+    <Cell><Data ss:Type="String">12421</Data></Cell>
+    <Cell><Data ss:Type="String">3.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">379</Data></Cell>
+    <Cell><Data ss:Type="String">12421</Data></Cell>
+    <Cell><Data ss:Type="String">3.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">408</Data></Cell>
+    <Cell><Data ss:Type="String">12421</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">New Jersey</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">183</Data></Cell>
+    <Cell><Data ss:Type="String">109161</Data></Cell>
+    <Cell><Data ss:Type="String">2.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2510</Data></Cell>
+    <Cell><Data ss:Type="String">109161</Data></Cell>
+    <Cell><Data ss:Type="String">2.5</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2693</Data></Cell>
+    <Cell><Data ss:Type="String">109161</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">New Mexico</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">84</Data></Cell>
+    <Cell><Data ss:Type="String">25269</Data></Cell>
+    <Cell><Data ss:Type="String">1.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">303</Data></Cell>
+    <Cell><Data ss:Type="String">25269</Data></Cell>
+    <Cell><Data ss:Type="String">1.5</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">388</Data></Cell>
+    <Cell><Data ss:Type="String">25269</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">New York</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">315</Data></Cell>
+    <Cell><Data ss:Type="String">220495</Data></Cell>
+    <Cell><Data ss:Type="String">1.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2447</Data></Cell>
+    <Cell><Data ss:Type="String">220495</Data></Cell>
+    <Cell><Data ss:Type="String">1.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2762</Data></Cell>
+    <Cell><Data ss:Type="String">220495</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">North Carolina</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">167</Data></Cell>
+    <Cell><Data ss:Type="String">124343</Data></Cell>
+    <Cell><Data ss:Type="String">1.5</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">1871</Data></Cell>
+    <Cell><Data ss:Type="String">124343</Data></Cell>
+    <Cell><Data ss:Type="String">1.6</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">2038</Data></Cell>
+    <Cell><Data ss:Type="String">124343</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">North Dakota</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">36</Data></Cell>
+    <Cell><Data ss:Type="String">10382</Data></Cell>
+    <Cell><Data ss:Type="String">3.9</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">409</Data></Cell>
+    <Cell><Data ss:Type="String">10382</Data></Cell>
+    <Cell><Data ss:Type="String">4.3</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">445</Data></Cell>
+    <Cell><Data ss:Type="String">10382</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ohio</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">334</Data></Cell>
+    <Cell><Data ss:Type="String">139679</Data></Cell>
+    <Cell><Data ss:Type="String">2.6</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">3673</Data></Cell>
+    <Cell><Data ss:Type="String">139679</Data></Cell>
+    <Cell><Data ss:Type="String">2.9</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">4007</Data></Cell>
+    <Cell><Data ss:Type="String">139679</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Oklahoma</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">79</Data></Cell>
+    <Cell><Data ss:Type="String">54806</Data></Cell>
+    <Cell><Data ss:Type="String">2.5</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">1355</Data></Cell>
+    <Cell><Data ss:Type="String">54806</Data></Cell>
+    <Cell><Data ss:Type="String">2.6</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">1434</Data></Cell>
+    <Cell><Data ss:Type="String">54806</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Oregon</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">56</Data></Cell>
+    <Cell><Data ss:Type="String">45870</Data></Cell>
+    <Cell><Data ss:Type="String">7.5</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3457</Data></Cell>
+    <Cell><Data ss:Type="String">45870</Data></Cell>
+    <Cell><Data ss:Type="String">7.7</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3513</Data></Cell>
+    <Cell><Data ss:Type="String">45870</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pennsylvania</Data></Cell>
+    <Cell><Data ss:Type="String">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">547</Data></Cell>
+    <Cell><Data ss:Type="String">143560</Data></Cell>
+    <Cell><Data ss:Type="String">2.6</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">3671</Data></Cell>
+    <Cell><Data ss:Type="String">143560</Data></Cell>
+    <Cell><Data ss:Type="String">2.9</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census (public). voluntary response (private)</Data></Cell>
+    <Cell><Data ss:Type="String">4218</Data></Cell>
+    <Cell><Data ss:Type="String">143560</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rhode Island</Data></Cell>
+    <Cell><Data ss:Type="String">0.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">16</Data></Cell>
+    <Cell><Data ss:Type="String">10964</Data></Cell>
+    <Cell><Data ss:Type="String">1.1</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">123</Data></Cell>
+    <Cell><Data ss:Type="String">10964</Data></Cell>
+    <Cell><Data ss:Type="String">1.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">139</Data></Cell>
+    <Cell><Data ss:Type="String">10964</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">South Carolina</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 1-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">92</Data></Cell>
+    <Cell><Data ss:Type="String">58442</Data></Cell>
+    <Cell><Data ss:Type="String">2.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 1-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">1420</Data></Cell>
+    <Cell><Data ss:Type="String">58442</Data></Cell>
+    <Cell><Data ss:Type="String">2.6</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 1-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">1512</Data></Cell>
+    <Cell><Data ss:Type="String">58442</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">South Dakota</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">22</Data></Cell>
+    <Cell><Data ss:Type="String">12062</Data></Cell>
+    <Cell><Data ss:Type="String">2.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">293</Data></Cell>
+    <Cell><Data ss:Type="String">12062</Data></Cell>
+    <Cell><Data ss:Type="String">2.6</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">315</Data></Cell>
+    <Cell><Data ss:Type="String">12062</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Tennessee</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">129</Data></Cell>
+    <Cell><Data ss:Type="String">78630</Data></Cell>
+    <Cell><Data ss:Type="String">1.8</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1390</Data></Cell>
+    <Cell><Data ss:Type="String">78630</Data></Cell>
+    <Cell><Data ss:Type="String">1.9</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">1519</Data></Cell>
+    <Cell><Data ss:Type="String">78630</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Texas</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">972</Data></Cell>
+    <Cell><Data ss:Type="String">390034</Data></Cell>
+    <Cell><Data ss:Type="String">2.2</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">8502</Data></Cell>
+    <Cell><Data ss:Type="String">390034</Data></Cell>
+    <Cell><Data ss:Type="String">2.4</Data></Cell>
+    <Cell><Data ss:Type="String">||</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">9474</Data></Cell>
+    <Cell><Data ss:Type="String">390034</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Utah</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">77</Data></Cell>
+    <Cell><Data ss:Type="String">50179</Data></Cell>
+    <Cell><Data ss:Type="String">5.5</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2759</Data></Cell>
+    <Cell><Data ss:Type="String">50179</Data></Cell>
+    <Cell><Data ss:Type="String">5.7</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">2836</Data></Cell>
+    <Cell><Data ss:Type="String">50179</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Vermont</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">19</Data></Cell>
+    <Cell><Data ss:Type="String">6126</Data></Cell>
+    <Cell><Data ss:Type="String">4.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">269</Data></Cell>
+    <Cell><Data ss:Type="String">6126</Data></Cell>
+    <Cell><Data ss:Type="String">4.7</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">288</Data></Cell>
+    <Cell><Data ss:Type="String">6126</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Virginia</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">317</Data></Cell>
+    <Cell><Data ss:Type="String">100394</Data></Cell>
+    <Cell><Data ss:Type="String">1.4</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">1406</Data></Cell>
+    <Cell><Data ss:Type="String">100394</Data></Cell>
+    <Cell><Data ss:Type="String">1.7</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">1722</Data></Cell>
+    <Cell><Data ss:Type="String">100394</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Washington</Data></Cell>
+    <Cell><Data ss:Type="String">0.8</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">673</Data></Cell>
+    <Cell><Data ss:Type="String">87510</Data></Cell>
+    <Cell><Data ss:Type="String">4.5</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">3964</Data></Cell>
+    <Cell><Data ss:Type="String">87510</Data></Cell>
+    <Cell><Data ss:Type="String">5.0</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">4389</Data></Cell>
+    <Cell><Data ss:Type="String">87510</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">West Virginia</Data></Cell>
+    <Cell><Data ss:Type="String">0.8</Data></Cell>
+    <Cell><Data ss:Type="String">†.‡.‡‡</Data></Cell>
+    <Cell><Data ss:Type="String">Voluntary response</Data></Cell>
+    <Cell><Data ss:Type="String">161</Data></Cell>
+    <Cell><Data ss:Type="String">19442</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="String">†.‡.‡‡</Data></Cell>
+    <Cell><Data ss:Type="String">Voluntary response</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">19442</Data></Cell>
+    <Cell><Data ss:Type="String">0.8</Data></Cell>
+    <Cell><Data ss:Type="String">†.‡.‡‡</Data></Cell>
+    <Cell><Data ss:Type="String">Voluntary response</Data></Cell>
+    <Cell><Data ss:Type="String">161</Data></Cell>
+    <Cell><Data ss:Type="String">19442</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Wisconsin</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">160</Data></Cell>
+    <Cell><Data ss:Type="String">66344</Data></Cell>
+    <Cell><Data ss:Type="String">5.6</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">3724</Data></Cell>
+    <Cell><Data ss:Type="String">66344</Data></Cell>
+    <Cell><Data ss:Type="String">5.9</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">Stratified 2-stage cluster sample</Data></Cell>
+    <Cell><Data ss:Type="String">3884</Data></Cell>
+    <Cell><Data ss:Type="String">66344</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Wyoming</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">15</Data></Cell>
+    <Cell><Data ss:Type="String">7734</Data></Cell>
+    <Cell><Data ss:Type="String">2.7</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">210</Data></Cell>
+    <Cell><Data ss:Type="String">7734</Data></Cell>
+    <Cell><Data ss:Type="String">2.9</Data></Cell>
+    <Cell><Data ss:Type="String">†</Data></Cell>
+    <Cell><Data ss:Type="String">Census</Data></Cell>
+    <Cell><Data ss:Type="String">225</Data></Cell>
+    <Cell><Data ss:Type="String">7734</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">United States</Data></Cell>
+    <Cell><Data ss:Type="String">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">2.2</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">2.5</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Median</Data></Cell>
+    <Cell><Data ss:Type="String">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">2.5</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">2.6</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+    <Cell><Data ss:Type="String">NaN</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Data Notes &amp; Footnotes">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="2" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultRowHeight="10.25">
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ElementType</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Element</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">MetadataElement</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Value</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Abbreviations: NA: not availableData Notes:• Data for the 2010-11 school year were not verified.• In 2009-10, data were weighted based on the population if awardee submitted reports for &amp;lt;95% of enrolled students. In 2011-12, all estimates of percent of children with exemptions were weighted to the number of enrolled children unless noted; number of exemptions were unweighted counts. Other years, estimates were adjusted for non-response and weighted for sampling as appropriate.• In 2012-13, estimates for DE and GA were approximated; estimates for CO were provided by the awardee. In 2013-14, estimates for DE and VA were approximated.• Sample designs varied by state/area: census: all schools (public and private) and all children within schools; random sample: a random sample of schools and/or students; voluntary response: a census with a student response rate of &amp;lt;90% (does not mean participation was optional); convenience sample: selection process was unclear.• Medical and non-medical exemptions may not be mutually exclusive and some children may have both exemptions.•Exemption estimates may include temporary as well as permanent exemptions.• The median is the center of the estimates in the distribution. National estimates are the sum of the weighted number of kindergartners with exemptions divided by the sum of the state kindergarten populations.   In 2009-10, medians and national estimates did not include CO, IL, MN, MO, NH, and WY. In 2011-12, medians and national estimates did not include IL, MN, MO, and WY. In 2012-13, medians and national estimates did not include IL, MN, MO, and SC. In 2013-14, medians and national estimates did not include WY. In 2014-15, medians and national estimates did not include WY. In 2015-16, WY was included in only the median and national estimate for any exemption. In 2016-17, medians did not include WY. In 2017-18, medians and national estimates did not include DC and WY. In 2018-19, medians and national estimates did not include DC. Years prior to 2015-16, TX was only included in non-medical exemptions medians and national estimates.Footnotes:* Included both temporary and permanent medical exemptions.† Exemptions for philosophical reasons were not allowed.‡ Exemptions for religious reasons were not allowed.§ State did not report the number of children with exemptions but reported the number of exemptions for each vaccine, which would count some children more than once. Estimates shown represent the lower bounds of the percent of children with exemptions, estimated using individual vaccines with the highest number of exemptions.|| Religious and philosophic exemptions were not reported separately.¶ May include preschool and pre-kindergarten students.** Exemptions due to medical reasons were allowed but not reported separately from other exemptions.†† Exemptions due to medical reasons were allowed but not reported.‡‡ Public school data only.§§ Estimates represent coverage among children in kindergarten and 1st grade.</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
